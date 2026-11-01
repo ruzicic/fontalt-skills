@@ -1,0 +1,254 @@
+{
+  "files": [
+    {
+      "axes_trimmed": {
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "bytes_before": 71272,
+      "features_dropped": [
+        "aalt",
+        "case",
+        "frac",
+        "ordn",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups"
+      ],
+      "outputs": [
+        {
+          "bytes": 10392,
+          "file": "geistmono-variable-s-p-1fz3wige2-h0o-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 11608,
+          "file": "geistmono-variable-s-p-1fz3wige2-h0o-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0131, U+0134-0137, U+0139-013E, U+0141-0148, U+014A-014D, U+0150-017E"
+        }
+      ],
+      "rfn": [],
+      "source": "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2"
+    },
+    {
+      "axes_trimmed": {},
+      "bytes_before": 73504,
+      "features_dropped": [
+        "aalt",
+        "case",
+        "dlig",
+        "frac",
+        "ordn",
+        "pnum",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss05",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups",
+        "tnum"
+      ],
+      "outputs": [
+        {
+          "bytes": 19772,
+          "file": "geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+0141, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 19012,
+          "file": "geist-italic-variable-s-p-10irncymhx47n-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0142-0148, U+014A-014D, U+0150-017E"
+        }
+      ],
+      "rfn": [],
+      "source": "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2"
+    },
+    {
+      "axes_trimmed": {},
+      "bytes_before": 69576,
+      "features_dropped": [
+        "aalt",
+        "case",
+        "dlig",
+        "frac",
+        "ordn",
+        "pnum",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss05",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups"
+      ],
+      "outputs": [
+        {
+          "bytes": 20700,
+          "file": "geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+00A9, U+00B7, U+00DF, U+00E7, U+00E9, U+00EF, U+00F1, U+00F3, U+00F8, U+00FC, U+0141-0142, U+0153, U+0179-017A, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 17248,
+          "file": "geist-variable-s-p-2hh2rqmrrgs5n-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00A8, U+00AA-00AC, U+00AE-00B6, U+00B8-00DE, U+00E0-00E6, U+00E8, U+00EA-00EE, U+00F0, U+00F2, U+00F4-00F7, U+00F9-00FB, U+00FD-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0143-0148, U+014A-014D, U+0150-0152, U+0154-0178, U+017B-017E"
+        }
+      ],
+      "rfn": [],
+      "source": "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+    }
+  ],
+  "pages": [
+    {
+      "after_bytes": 50864,
+      "before_bytes": 214352,
+      "files_after": 3,
+      "files_before": 3,
+      "page": "/@1440",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 76.3
+    },
+    {
+      "after_bytes": 50864,
+      "before_bytes": 214352,
+      "files_after": 3,
+      "files_before": 3,
+      "page": "/@390",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 76.3
+    },
+    {
+      "after_bytes": 50864,
+      "before_bytes": 214352,
+      "files_after": 3,
+      "files_before": 3,
+      "page": "/blog/@1440",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 76.3
+    },
+    {
+      "after_bytes": 50864,
+      "before_bytes": 214352,
+      "files_after": 3,
+      "files_before": 3,
+      "page": "/blog/@390",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 76.3
+    },
+    {
+      "after_bytes": 87124,
+      "before_bytes": 214352,
+      "files_after": 5,
+      "files_before": 3,
+      "page": "/notes/@1440",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 59.4
+    },
+    {
+      "after_bytes": 87124,
+      "before_bytes": 214352,
+      "files_after": 5,
+      "files_before": 3,
+      "page": "/notes/@390",
+      "preloads_after": [
+        "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+        "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+        "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+      ],
+      "preloads_before": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "saved_pct": 59.4
+    }
+  ],
+  "pixel_diff": {
+    "fail": 0,
+    "max_cls_after": 0.03358,
+    "pages": 12,
+    "pass": 12,
+    "tolerated": 0,
+    "total_differing_pixels": 0
+  },
+  "total_after_bytes": 377704,
+  "total_before_bytes": 1286112,
+  "total_saved_pct": 70.6
+}
