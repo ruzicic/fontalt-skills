@@ -1,0 +1,498 @@
+{
+  "fixture": "plain-html",
+  "runs_green": 3,
+  "runs": 3,
+  "all_green": true,
+  "runs_detail": [
+    {
+      "run": 1,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /post.html": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /late.html": true
+      },
+      "seconds": 220.0,
+      "started": "2026-11-01T14:29:35+01:00",
+      "font_bytes_before": 2634784,
+      "font_bytes_after": 906336,
+      "saved_pct": 65.6,
+      "per_page": [
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 16,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.00163,
+        "pages": 16,
+        "pass": 16,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.00142,
+      "cls_after_max": 0.00163,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2",
+          "bytes_before": 15196,
+          "bytes_after_all_pieces": 8296
+        },
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-wght-normal.woff2",
+          "bytes_before": 40404,
+          "bytes_after_all_pieces": 31324
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2",
+          "bytes_before": 110324,
+          "bytes_after_all_pieces": 26372
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2",
+          "bytes_before": 100872,
+          "bytes_after_all_pieces": 36320
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-italic.woff2",
+          "bytes_before": 130188,
+          "bytes_after_all_pieces": 61952
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-normal.woff2",
+          "bytes_before": 122360,
+          "bytes_after_all_pieces": 84096
+        }
+      ],
+      "axis_trim_experiment": {
+        "font_bytes_after": 852024,
+        "saved_pct": 67.7,
+        "extra_saved_bytes_vs_exact": 54312,
+        "differing_pixels": 114394,
+        "worst_page_differing_pct": 2.08461,
+        "pages_failing": 16,
+        "pixels_per_page": {
+          "/@1440@dark": 18418,
+          "/@1440@light": 18624,
+          "/@390@dark": 17775,
+          "/@390@light": 17951,
+          "/code.html@1440@dark": 2647,
+          "/code.html@1440@light": 2676,
+          "/code.html@390@dark": 2731,
+          "/code.html@390@light": 2759,
+          "/late.html@1440@dark": 2443,
+          "/late.html@1440@light": 2486,
+          "/late.html@390@dark": 2411,
+          "/late.html@390@light": 2445,
+          "/post.html@1440@dark": 5541,
+          "/post.html@1440@light": 5595,
+          "/post.html@390@dark": 4919,
+          "/post.html@390@light": 4973
+        }
+      },
+      "rfn_renames": [
+        "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'"
+      ]
+    },
+    {
+      "run": 2,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /post.html": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /late.html": true
+      },
+      "seconds": 155.8,
+      "started": "2026-11-01T14:32:10+01:00",
+      "font_bytes_before": 2634784,
+      "font_bytes_after": 906336,
+      "saved_pct": 65.6,
+      "per_page": [
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 16,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.00163,
+        "pages": 16,
+        "pass": 16,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.00155,
+      "cls_after_max": 0.00163,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2",
+          "bytes_before": 15196,
+          "bytes_after_all_pieces": 8296
+        },
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-wght-normal.woff2",
+          "bytes_before": 40404,
+          "bytes_after_all_pieces": 31324
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2",
+          "bytes_before": 110324,
+          "bytes_after_all_pieces": 26372
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2",
+          "bytes_before": 100872,
+          "bytes_after_all_pieces": 36320
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-italic.woff2",
+          "bytes_before": 130188,
+          "bytes_after_all_pieces": 61952
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-normal.woff2",
+          "bytes_before": 122360,
+          "bytes_after_all_pieces": 84096
+        }
+      ],
+      "axis_trim_experiment": null,
+      "rfn_renames": [
+        "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'"
+      ]
+    },
+    {
+      "run": 3,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /post.html": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /late.html": true
+      },
+      "seconds": 155.7,
+      "started": "2026-11-01T14:34:46+01:00",
+      "font_bytes_before": 2634784,
+      "font_bytes_after": 906336,
+      "saved_pct": 65.6,
+      "per_page": [
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 126416,
+          "before_bytes": 504148,
+          "files_after": 5,
+          "files_before": 5,
+          "page": "/@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 74.9
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 122864,
+          "before_bytes": 308148,
+          "files_after": 4,
+          "files_before": 4,
+          "page": "/code.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 60.1
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 105964,
+          "before_bytes": 252548,
+          "files_after": 3,
+          "files_before": 2,
+          "page": "/late.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 58.0
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@1440",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        },
+        {
+          "after_bytes": 97924,
+          "before_bytes": 252548,
+          "files_after": 2,
+          "files_before": 2,
+          "page": "/post.html@390",
+          "preloads_after": [],
+          "preloads_before": [],
+          "saved_pct": 61.2
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 16,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.00163,
+        "pages": 16,
+        "pass": 16,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.00163,
+      "cls_after_max": 0.00163,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2",
+          "bytes_before": 15196,
+          "bytes_after_all_pieces": 8296
+        },
+        {
+          "source": "/fonts/original/jetbrains-mono-latin-wght-normal.woff2",
+          "bytes_before": 40404,
+          "bytes_after_all_pieces": 31324
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2",
+          "bytes_before": 110324,
+          "bytes_after_all_pieces": 26372
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2",
+          "bytes_before": 100872,
+          "bytes_after_all_pieces": 36320
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-italic.woff2",
+          "bytes_before": 130188,
+          "bytes_after_all_pieces": 61952
+        },
+        {
+          "source": "/fonts/original/source-serif-4-latin-opsz-normal.woff2",
+          "bytes_before": 122360,
+          "bytes_after_all_pieces": 84096
+        }
+      ],
+      "axis_trim_experiment": null,
+      "rfn_renames": [
+        "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'"
+      ]
+    }
+  ]
+}

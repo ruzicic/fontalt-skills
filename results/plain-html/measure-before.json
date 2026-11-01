@@ -1,0 +1,95 @@
+{
+  "fonts": [],
+  "pages": {
+    "/@1440": {
+      "font_bytes": 504148,
+      "font_files": {
+        "/fonts/original/jetbrains-mono-latin-wght-normal.woff2": 40404,
+        "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2": 110324,
+        "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2": 100872,
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/",
+      "preloads": [],
+      "viewport": 1440
+    },
+    "/@390": {
+      "font_bytes": 504148,
+      "font_files": {
+        "/fonts/original/jetbrains-mono-latin-wght-normal.woff2": 40404,
+        "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2": 110324,
+        "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2": 100872,
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/",
+      "preloads": [],
+      "viewport": 390
+    },
+    "/code.html@1440": {
+      "font_bytes": 308148,
+      "font_files": {
+        "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2": 15196,
+        "/fonts/original/jetbrains-mono-latin-wght-normal.woff2": 40404,
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/code.html",
+      "preloads": [],
+      "viewport": 1440
+    },
+    "/code.html@390": {
+      "font_bytes": 308148,
+      "font_files": {
+        "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2": 15196,
+        "/fonts/original/jetbrains-mono-latin-wght-normal.woff2": 40404,
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/code.html",
+      "preloads": [],
+      "viewport": 390
+    },
+    "/late.html@1440": {
+      "font_bytes": 252548,
+      "font_files": {
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/late.html",
+      "preloads": [],
+      "viewport": 1440
+    },
+    "/late.html@390": {
+      "font_bytes": 252548,
+      "font_files": {
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/late.html",
+      "preloads": [],
+      "viewport": 390
+    },
+    "/post.html@1440": {
+      "font_bytes": 252548,
+      "font_files": {
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/post.html",
+      "preloads": [],
+      "viewport": 1440
+    },
+    "/post.html@390": {
+      "font_bytes": 252548,
+      "font_files": {
+        "/fonts/original/source-serif-4-latin-opsz-italic.woff2": 130188,
+        "/fonts/original/source-serif-4-latin-opsz-normal.woff2": 122360
+      },
+      "path": "/post.html",
+      "preloads": [],
+      "viewport": 390
+    }
+  }
+}

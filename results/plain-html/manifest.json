@@ -1,0 +1,812 @@
+{
+  "axes_mode": "exact",
+  "files": [
+    {
+      "after_total_bytes": 8296,
+      "axis_limits": {
+        "wght": [
+          400.0,
+          800.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 800.0,
+            "min": 100.0,
+            "tag": "wght"
+          }
+        ],
+        "bytes": 15196,
+        "codepoints": 190,
+        "features": {
+          "GPOS": [
+            "mark"
+          ],
+          "GSUB": [
+            "ccmp",
+            "locl"
+          ]
+        },
+        "glyphs": 261,
+        "hinted": true,
+        "reserved_font_names": []
+      },
+      "css": [
+        "@font-face {\n  font-family: \"JetBrains Mono Variable\";\n  src: url(\"/fonts/optimized/jetbrains-mono-latin-ext-wght-normal-core.woff2\") format(\"woff2\");\n  font-weight: 100 800;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0141, U+017A;\n}",
+        "@font-face {\n  font-family: \"JetBrains Mono Variable\";\n  src: url(\"/fonts/optimized/jetbrains-mono-latin-ext-wght-normal-ext.woff2\") format(\"woff2\");\n  font-weight: 100 800;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0100-0130, U+0134-0140, U+0142-0151, U+0154-0179, U+017B-017F;\n}"
+      ],
+      "family": "JetBrains Mono Variable",
+      "features_dropped": [],
+      "features_kept": [
+        "ccmp",
+        "locl",
+        "mark"
+      ],
+      "output_stem": "jetbrains-mono-latin-ext-wght-normal",
+      "outputs": [
+        {
+          "bytes": 920,
+          "codepoints": 2,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 800.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": []
+            },
+            "glyphs": 5,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "jetbrains-mono-latin-ext-wght-normal-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0141, U+017A"
+        },
+        {
+          "bytes": 7376,
+          "codepoints": 121,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 800.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": [
+                "locl"
+              ]
+            },
+            "glyphs": 190,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "jetbrains-mono-latin-ext-wght-normal-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+0100-0130, U+0134-0140, U+0142-0151, U+0154-0179, U+017B-017F"
+        }
+      ],
+      "rfn": [],
+      "saved_bytes_if_all_fetched": 6900,
+      "source": "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2"
+    },
+    {
+      "after_total_bytes": 31324,
+      "axis_limits": {
+        "wght": [
+          400.0,
+          800.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 800.0,
+            "min": 100.0,
+            "tag": "wght"
+          }
+        ],
+        "bytes": 40404,
+        "codepoints": 229,
+        "features": {
+          "GPOS": [
+            "mark"
+          ],
+          "GSUB": [
+            "calt",
+            "ccmp",
+            "frac",
+            "locl"
+          ]
+        },
+        "glyphs": 394,
+        "hinted": true,
+        "reserved_font_names": []
+      },
+      "css": [
+        "@font-face {\n  font-family: \"JetBrains Mono Variable\";\n  src: url(\"/fonts/optimized/jetbrains-mono-latin-wght-normal-core.woff2\") format(\"woff2\");\n  font-weight: 100 800;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+00E9, U+00EF, U+00F3, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;\n}",
+        "@font-face {\n  font-family: \"JetBrains Mono Variable\";\n  src: url(\"/fonts/optimized/jetbrains-mono-latin-wght-normal-ext.woff2\") format(\"woff2\");\n  font-weight: 100 800;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+00A1-00E8, U+00EA-00EE, U+00F0-00F2, U+00F4-00FF, U+0131, U+0152-0153;\n}"
+      ],
+      "family": "JetBrains Mono Variable",
+      "features_dropped": [
+        "frac"
+      ],
+      "features_kept": [
+        "calt",
+        "ccmp",
+        "locl",
+        "mark"
+      ],
+      "output_stem": "jetbrains-mono-latin-wght-normal",
+      "outputs": [
+        {
+          "bytes": 24020,
+          "codepoints": 106,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 800.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": [
+                "calt",
+                "ccmp",
+                "locl"
+              ]
+            },
+            "glyphs": 256,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "jetbrains-mono-latin-wght-normal-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+00E9, U+00EF, U+00F3, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 7304,
+          "codepoints": 95,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 800.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": [
+                "ccmp"
+              ]
+            },
+            "glyphs": 129,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "jetbrains-mono-latin-wght-normal-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00E8, U+00EA-00EE, U+00F0-00F2, U+00F4-00FF, U+0131, U+0152-0153"
+        }
+      ],
+      "rfn": [],
+      "saved_bytes_if_all_fetched": 9080,
+      "source": "/fonts/original/jetbrains-mono-latin-wght-normal.woff2"
+    },
+    {
+      "after_total_bytes": 26372,
+      "axis_limits": {
+        "opsz": [
+          8.0,
+          20.0
+        ],
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 200.0,
+            "tag": "wght"
+          },
+          {
+            "default": 20.0,
+            "max": 60.0,
+            "min": 8.0,
+            "tag": "opsz"
+          }
+        ],
+        "bytes": 110324,
+        "codepoints": 276,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "ccmp",
+            "locl"
+          ]
+        },
+        "glyphs": 372,
+        "hinted": true,
+        "reserved_font_names": [
+          "Source"
+        ]
+      },
+      "css": [
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-ext-opsz-italic-core.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+0141;\n}",
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-ext-opsz-italic-ext.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+0100-012B, U+012E-0130, U+0134-0140, U+0142-0151, U+0154-0165, U+0168-017F;\n}"
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_dropped": [],
+      "features_kept": [
+        "ccmp",
+        "kern",
+        "locl",
+        "mark",
+        "mkmk"
+      ],
+      "output_stem": "source-serif-4-latin-ext-opsz-italic",
+      "outputs": [
+        {
+          "bytes": 1436,
+          "codepoints": 1,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 20.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": []
+            },
+            "glyphs": 2,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-ext-opsz-italic-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0141"
+        },
+        {
+          "bytes": 24936,
+          "codepoints": 118,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 20.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": []
+            },
+            "glyphs": 183,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-ext-opsz-italic-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+0100-012B, U+012E-0130, U+0134-0140, U+0142-0151, U+0154-0165, U+0168-017F"
+        }
+      ],
+      "rfn": [
+        "Source"
+      ],
+      "saved_bytes_if_all_fetched": 83952,
+      "source": "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2"
+    },
+    {
+      "after_total_bytes": 36320,
+      "axis_limits": {
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 200.0,
+            "tag": "wght"
+          },
+          {
+            "default": 20.0,
+            "max": 60.0,
+            "min": 8.0,
+            "tag": "opsz"
+          }
+        ],
+        "bytes": 100872,
+        "codepoints": 276,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "ccmp",
+            "locl"
+          ]
+        },
+        "glyphs": 373,
+        "hinted": true,
+        "reserved_font_names": [
+          "Source"
+        ]
+      },
+      "css": [
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-ext-opsz-normal-core.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0141-0142, U+0179-017A;\n}",
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-ext-opsz-normal-ext.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0100-012B, U+012E-0130, U+0134-0140, U+0143-0151, U+0154-0165, U+0168-0178, U+017B-017F;\n}"
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_dropped": [],
+      "features_kept": [
+        "ccmp",
+        "kern",
+        "locl",
+        "mark",
+        "mkmk"
+      ],
+      "output_stem": "source-serif-4-latin-ext-opsz-normal",
+      "outputs": [
+        {
+          "bytes": 3036,
+          "codepoints": 4,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 60.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": []
+            },
+            "glyphs": 9,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-ext-opsz-normal-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0141-0142, U+0179-017A"
+        },
+        {
+          "bytes": 33284,
+          "codepoints": 115,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 60.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": []
+            },
+            "glyphs": 181,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-ext-opsz-normal-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+0100-012B, U+012E-0130, U+0134-0140, U+0143-0151, U+0154-0165, U+0168-0178, U+017B-017F"
+        }
+      ],
+      "rfn": [
+        "Source"
+      ],
+      "saved_bytes_if_all_fetched": 64552,
+      "source": "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2"
+    },
+    {
+      "after_total_bytes": 61952,
+      "axis_limits": {
+        "opsz": [
+          8.0,
+          20.0
+        ],
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 200.0,
+            "tag": "wght"
+          },
+          {
+            "default": 20.0,
+            "max": 60.0,
+            "min": 8.0,
+            "tag": "opsz"
+          }
+        ],
+        "bytes": 130188,
+        "codepoints": 231,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "ccmp",
+            "dnom",
+            "frac",
+            "liga",
+            "locl",
+            "numr",
+            "pnum",
+            "tnum"
+          ]
+        },
+        "glyphs": 336,
+        "hinted": true,
+        "reserved_font_names": [
+          "Source"
+        ]
+      },
+      "css": [
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-opsz-italic-core.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;\n}",
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-opsz-italic-ext.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+00A1-00FF, U+0131, U+0152-0153;\n}"
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_dropped": [
+        "frac",
+        "pnum",
+        "tnum"
+      ],
+      "features_kept": [
+        "ccmp",
+        "dnom",
+        "kern",
+        "liga",
+        "locl",
+        "mark",
+        "mkmk",
+        "numr"
+      ],
+      "output_stem": "source-serif-4-latin-opsz-italic",
+      "outputs": [
+        {
+          "bytes": 40084,
+          "codepoints": 103,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 20.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "dnom",
+                "liga",
+                "locl",
+                "numr"
+              ]
+            },
+            "glyphs": 180,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-opsz-italic-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 21868,
+          "codepoints": 98,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 20.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "ccmp"
+              ]
+            },
+            "glyphs": 141,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-opsz-italic-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00FF, U+0131, U+0152-0153"
+        }
+      ],
+      "rfn": [
+        "Source"
+      ],
+      "saved_bytes_if_all_fetched": 68236,
+      "source": "/fonts/original/source-serif-4-latin-opsz-italic.woff2"
+    },
+    {
+      "after_total_bytes": 84096,
+      "axis_limits": {
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 200.0,
+            "tag": "wght"
+          },
+          {
+            "default": 20.0,
+            "max": 60.0,
+            "min": 8.0,
+            "tag": "opsz"
+          }
+        ],
+        "bytes": 122360,
+        "codepoints": 231,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "ccmp",
+            "dnom",
+            "frac",
+            "liga",
+            "locl",
+            "numr",
+            "pnum",
+            "tnum"
+          ]
+        },
+        "glyphs": 331,
+        "hinted": true,
+        "reserved_font_names": [
+          "Source"
+        ]
+      },
+      "css": [
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-opsz-normal-core.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00DF, U+00E7, U+00E9, U+00EF, U+00F1, U+00F3, U+00F8, U+00FC, U+0153, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20AC, U+2122;\n}",
+        "@font-face {\n  font-family: \"Source Serif 4 Variable\";\n  src: url(\"/fonts/optimized/source-serif-4-latin-opsz-normal-ext.woff2\") format(\"woff2\");\n  font-weight: 200 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+00A1-00A8, U+00AA-00B6, U+00B8-00DE, U+00E0-00E6, U+00E8, U+00EA-00EE, U+00F0, U+00F2, U+00F4-00F7, U+00F9-00FB, U+00FD-00FF, U+0131, U+0152;\n}"
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_dropped": [
+        "frac",
+        "pnum"
+      ],
+      "features_kept": [
+        "ccmp",
+        "dnom",
+        "kern",
+        "liga",
+        "locl",
+        "mark",
+        "mkmk",
+        "numr",
+        "tnum"
+      ],
+      "output_stem": "source-serif-4-latin-opsz-normal",
+      "outputs": [
+        {
+          "bytes": 57840,
+          "codepoints": 116,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 60.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "ccmp",
+                "dnom",
+                "liga",
+                "locl",
+                "numr"
+              ]
+            },
+            "glyphs": 190,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-opsz-normal-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+00A9, U+00B7, U+00DF, U+00E7, U+00E9, U+00EF, U+00F1, U+00F3, U+00F8, U+00FC, U+0153, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20AC, U+2122"
+        },
+        {
+          "bytes": 26256,
+          "codepoints": 87,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              },
+              {
+                "default": 20.0,
+                "max": 60.0,
+                "min": 8.0,
+                "tag": "opsz"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": []
+            },
+            "glyphs": 128,
+            "hinted": false,
+            "reserved_font_names": [
+              "Source"
+            ]
+          },
+          "file": "source-serif-4-latin-opsz-normal-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00A8, U+00AA-00B6, U+00B8-00DE, U+00E0-00E6, U+00E8, U+00EA-00EE, U+00F0, U+00F2, U+00F4-00F7, U+00F9-00FB, U+00FD-00FF, U+0131, U+0152"
+        }
+      ],
+      "rfn": [
+        "Source"
+      ],
+      "saved_bytes_if_all_fetched": 38264,
+      "source": "/fonts/original/source-serif-4-latin-opsz-normal.woff2"
+    }
+  ],
+  "notes": [
+    "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2: wght: used 400-700 inside 400-800; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/jetbrains-mono-latin-wght-normal.woff2: wght: used 400-700 inside 400-800; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+    "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: opsz: used 12.96-18 inside 8-20; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2: wght: used 400-800 inside 400-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+    "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: opsz: used 12.96-45 inside 8-60; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2: wght: used 400-700 inside 400-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-opsz-italic.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+    "/fonts/original/source-serif-4-latin-opsz-italic.woff2: opsz: used 12.96-18 inside 8-20; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-opsz-italic.woff2: wght: used 400-800 inside 400-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-opsz-normal.woff2: Reserved Font Name ['Source'] -> renamed 12 name records to 'Slim'",
+    "/fonts/original/source-serif-4-latin-opsz-normal.woff2: opsz: used 12.96-45 inside 8-60; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/fonts/original/source-serif-4-latin-opsz-normal.woff2: wght: used 400-700 inside 400-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)"
+  ],
+  "preload_mode": "off",
+  "preload_replacements": {},
+  "totals": {
+    "after_bytes_core_plus_extended": 248360,
+    "before_bytes": 519344
+  },
+  "url_prefix": "/fonts/optimized/"
+}
