@@ -1,0 +1,9 @@
+{
+  "name": "font-skills-fixture-nextjs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Next.js static-export fixture for the optimize-web-fonts skill (Geist, SIL OFL 1.1)",
+  "scripts": { "build": "next build" },
+  "engines": { "node": ">=20.9" },
+  "dependencies": { "next": "16.4.3", "react": "19.2.0", "react-dom": "19.2.0" }
+}

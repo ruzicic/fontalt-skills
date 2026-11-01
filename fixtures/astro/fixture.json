@@ -1,0 +1,59 @@
+{
+  "name": "astro",
+  "kind": "npm",
+  "source": ".",
+  "install": [
+    "npm",
+    "ci",
+    "--no-audit",
+    "--no-fund",
+    "--loglevel=error"
+  ],
+  "build": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "dist": "dist",
+  "paths": [
+    "/",
+    "/blog/",
+    "/blog/typography-notes/",
+    "/blog/first-post/",
+    "/about/"
+  ],
+  "preload": "auto",
+  "expect": {
+    "max_font_files": [
+      {
+        "path": "/",
+        "max": 5
+      },
+      {
+        "path": "/blog/",
+        "max": 5
+      },
+      {
+        "path": "/blog/typography-notes/",
+        "max": 5
+      },
+      {
+        "path": "/blog/first-post/",
+        "max": 5
+      }
+    ],
+    "min_font_files": [
+      {
+        "path": "/about/",
+        "min": 6
+      }
+    ]
+  },
+  "url_prefix": "/fonts/optimized/",
+  "scan_paths": [
+    "/",
+    "/blog/",
+    "/blog/typography-notes/",
+    "/blog/first-post/"
+  ]
+}

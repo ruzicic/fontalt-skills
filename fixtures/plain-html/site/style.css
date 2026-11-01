@@ -1,0 +1,38 @@
+:root {
+  --serif: "Source Serif 4 Variable", "Source Serif 4 Fallback", Georgia, serif;
+  --mono: "JetBrains Mono Variable", "JetBrains Mono Fallback", ui-monospace, monospace;
+  --bg: #fbfaf7; --fg: #1d1c1a; --muted: #6b675f; --accent: #8a3b12; --code-bg: #efece4;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17161a; --fg: #ece9e1; --muted: #a29d93; --accent: #e0a070; --code-bg: #232128; }
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--serif); line-height: 1.6; }
+header, main, footer { max-width: 42rem; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 1.5rem; padding-bottom: .5rem; display: flex; gap: 1.25rem; align-items: baseline; flex-wrap: wrap; }
+header a { color: var(--muted); text-decoration: none; font-size: .8rem; font-weight: 500; letter-spacing: .02em; }
+header a:hover { font-weight: 700; color: var(--accent); }
+header .brand { font-size: 1.1rem; font-weight: 700; color: var(--fg); }
+h1 { font-size: 2.5rem; line-height: 1.15; font-weight: 700; margin: 1.5rem 0 .75rem; }
+h2 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 .5rem; }
+h2.smallcaps { font-variant-caps: small-caps; font-weight: 500; letter-spacing: .04em; }
+p { margin: 0 0 1rem; }
+.lead { color: var(--muted); }
+.prose { hyphens: auto; text-align: justify; }
+blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--accent); font-style: italic; }
+blockquote strong { font-weight: 800; }
+.meta { font-size: .72rem; color: var(--muted); font-weight: 400; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; margin: 1rem 0; }
+td, th { padding: .25rem .5rem; border-bottom: 1px solid var(--code-bg); text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+.callout { background: var(--code-bg); padding: .75rem 1rem; margin: 1rem 0; font-size: .95rem; }
+.cjk { font-size: 1rem; color: var(--muted); }
+code, pre { font-family: var(--mono); font-size: .8rem; }
+pre { background: var(--code-bg); padding: 1rem; overflow-x: auto; line-height: 1.5; }
+pre.nolig { font-variant-ligatures: none; font-feature-settings: "zero" 1; }
+pre .kw { font-weight: 700; color: var(--accent); }
+footer { padding-top: 2rem; padding-bottom: 3rem; color: var(--muted); font-size: .72rem; }
+
+.boxes { display: flex; gap: 1rem; }
+.box { display: inline-block; min-width: 2.5rem; padding: .25rem .5rem; border: 1px solid #8884; border-radius: 4px; text-align: center; }
