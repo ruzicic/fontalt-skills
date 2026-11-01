@@ -5,7 +5,7 @@ Serves the two built directories on temporary localhost ports (or pass --before-
 screenshots every page at every viewport and colour scheme (animations off, fonts ready, lazy images loaded),
 counts differing pixels, groups them into clusters, and names the element under each cluster so every difference
 can be explained (content change / regression / sub-pixel rounding). Also measures layout shift with every font
-response delayed 1.5 s, before vs after.
+response delayed 1.5 s, before vs after (a failing CLS is re-sampled 4x per side and worst is compared with worst: it is bimodal).
 
   python3 pixel_diff.py --before-dir work/before/dist --after-dir work/after/dist \
       --paths / /blog/ --out work/diff
@@ -203,6 +203,14 @@ def main(argv=None):
                         cb = asyncio.run(cls_run(b_base, path, width, scheme, a.cls_delay_ms, exe))
                         ca = asyncio.run(cls_run(a_base, path, width, scheme, a.cls_delay_ms, exe))
                         ok = ca <= 0.1 and ca <= cb + 0.01
+                        if not ok:
+                            # CLS with delayed fonts is bimodal run to run (files land a few ms apart, Chromium splits the
+                            # swap over one or two frames: one unchanged baseline page gave 0.043 / 0.090 / 0.094). Before
+                            # failing, sample both sides again and compare worst case with worst case.
+                            for _ in range(4):
+                                cb = max(cb, asyncio.run(cls_run(b_base, path, width, scheme, a.cls_delay_ms, exe)))
+                                ca = max(ca, asyncio.run(cls_run(a_base, path, width, scheme, a.cls_delay_ms, exe)))
+                            ok = ca <= 0.1 and ca <= cb + 0.01
                         pages[key]["cls_before"], pages[key]["cls_after"], pages[key]["cls_ok"] = cb, ca, ok
                         if not ok:
                             pages[key]["status"] = "FAIL"
