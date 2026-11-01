@@ -31,6 +31,12 @@ pip install -r <skill dir>/requirements.txt
 playwright install chromium        # skip if a Chromium is already installed
 ```
 
+Browser caveat: each Playwright release looks for one exact Chromium build (`~/.cache/ms-playwright/chromium_headless_shell-<rev>`).
+`requirements.txt` pins `playwright==1.57.0`, which uses revision 1200 (Chromium 143), the build cached on the reference box.
+If your cache holds another revision, either pin the Playwright version that matches it (`pip install playwright==<v>`;
+the revision is in `playwright/driver/package/browsers.json`) or run `playwright install chromium`. Pixel diffs are only
+comparable within one Chromium build, so keep before and after runs on the same one.
+
 All scripts live in `<skill dir>/scripts/`, need only Python 3.10+, and print `--help`. Use paths relative to the
 user's project; keep work files in a scratch directory (`work/`) and commit only the generated fonts + CSS.
 
@@ -123,7 +129,7 @@ python3 scripts/pixel_diff.py --before-dir work/before --after-dir work/before -
 ```
 Per page and viewport: PASS (0 px), TOLERATED (<= 0.02 % of pixels and max channel delta <= 16; each cluster listed with the
 element under it), FAIL otherwise (also: page height changed, CLS > 0.1 or worse than +0.01 with every font response
-delayed 1.5 s). Open `work/diff/img/*-diff.png` for any non-zero page. Explain each cluster as one of:
+delayed 1.5 s; a failing CLS is re-sampled 4x per side and the worst samples are compared, because delayed-font CLS flips between two values from run to run). Open `work/diff/img/*-diff.png` for any non-zero page. Explain each cluster as one of:
 **content change** (e.g. a timestamp), **regression to fix** (missing glyph/feature/weight, wrong fallback), or
 **harmless sub-pixel rounding** (only acceptable with the numbers in the report). Linux Chromium only: hinting
 removal is invisible on macOS but can change Windows rendering - say so in the report.
