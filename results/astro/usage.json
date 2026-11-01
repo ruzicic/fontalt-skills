@@ -1,5 +1,5 @@
 {
-  "base_url": "http://127.0.0.1:36227",
+  "base_url": "http://127.0.0.1:42149",
   "files": [
     {
       "axes_in_file": {},
@@ -26,7 +26,7 @@
       ],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/03f5467bfe589012.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/03f5467bfe589012.woff2",
       "pages": {
         "/blog/typography-notes/": [
           32,
@@ -87,7 +87,7 @@
           "weight": "400"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/03f5467bfe589012.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/03f5467bfe589012.woff2"
     },
     {
       "axes_in_file": {},
@@ -138,7 +138,7 @@
       ],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/1492e67ee33e5ffb.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/1492e67ee33e5ffb.woff2",
       "pages": {
         "/": [
           32,
@@ -280,7 +280,7 @@
           "weight": "700"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/1492e67ee33e5ffb.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/1492e67ee33e5ffb.woff2"
     },
     {
       "axes_in_file": {},
@@ -383,7 +383,7 @@
       ],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/294fbab2f0541b57.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/294fbab2f0541b57.woff2",
       "pages": {
         "/": [
           32,
@@ -672,7 +672,7 @@
           "weight": "400"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/294fbab2f0541b57.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/294fbab2f0541b57.woff2"
     },
     {
       "axes_in_file": {},
@@ -681,7 +681,7 @@
       "chars": [],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/8af75bf2161edf00.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/8af75bf2161edf00.woff2",
       "pages": {},
       "path": "/_astro/fonts/8af75bf2161edf00.woff2",
       "rules": [
@@ -722,7 +722,7 @@
           "weight": "700"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/8af75bf2161edf00.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/8af75bf2161edf00.woff2"
     },
     {
       "axes_in_file": {},
@@ -731,7 +731,7 @@
       "chars": [],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/92360899ef6a9b03.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/92360899ef6a9b03.woff2",
       "pages": {},
       "path": "/_astro/fonts/92360899ef6a9b03.woff2",
       "rules": [
@@ -772,7 +772,7 @@
           "weight": "400"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/92360899ef6a9b03.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/92360899ef6a9b03.woff2"
     },
     {
       "axes_in_file": {},
@@ -781,7 +781,7 @@
       "chars": [],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/99cb77fe028ffd63.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/99cb77fe028ffd63.woff2",
       "pages": {},
       "path": "/_astro/fonts/99cb77fe028ffd63.woff2",
       "rules": [
@@ -822,7 +822,7 @@
           "weight": "700"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/99cb77fe028ffd63.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/99cb77fe028ffd63.woff2"
     },
     {
       "axes_in_file": {},
@@ -853,7 +853,7 @@
       ],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/b703bed24e27df2b.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/b703bed24e27df2b.woff2",
       "pages": {
         "/blog/typography-notes/": [
           261,
@@ -918,7 +918,7 @@
           "weight": "400"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/b703bed24e27df2b.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/b703bed24e27df2b.woff2"
     },
     {
       "axes_in_file": {},
@@ -935,7 +935,7 @@
       ],
       "family": "Atkinson Hyperlegible-a8ff7c0e228da23b",
       "features_used": [],
-      "local_file": "/workspace/fs-work/astro/run3/saved-fonts/c16866be73260633.woff2",
+      "local_file": "/workspace/font-skills/work/astro/run3/saved-fonts/c16866be73260633.woff2",
       "pages": {
         "/blog/typography-notes/": [
           32,
@@ -986,7 +986,7 @@
           "weight": "700"
         }
       ],
-      "url": "http://127.0.0.1:36227/_astro/fonts/c16866be73260633.woff2"
+      "url": "http://127.0.0.1:42149/_astro/fonts/c16866be73260633.woff2"
     }
   ],
   "notes": [],
@@ -998,44 +998,44 @@
   ],
   "preloads": {
     "/": [
-      "http://127.0.0.1:36227/_astro/fonts/b703bed24e27df2b.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/294fbab2f0541b57.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/8af75bf2161edf00.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/1492e67ee33e5ffb.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/92360899ef6a9b03.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/03f5467bfe589012.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/99cb77fe028ffd63.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/c16866be73260633.woff2"
+      "http://127.0.0.1:42149/_astro/fonts/b703bed24e27df2b.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/294fbab2f0541b57.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/8af75bf2161edf00.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/1492e67ee33e5ffb.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/92360899ef6a9b03.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/03f5467bfe589012.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/99cb77fe028ffd63.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/c16866be73260633.woff2"
     ],
     "/blog/": [
-      "http://127.0.0.1:36227/_astro/fonts/b703bed24e27df2b.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/294fbab2f0541b57.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/8af75bf2161edf00.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/1492e67ee33e5ffb.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/92360899ef6a9b03.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/03f5467bfe589012.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/99cb77fe028ffd63.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/c16866be73260633.woff2"
+      "http://127.0.0.1:42149/_astro/fonts/b703bed24e27df2b.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/294fbab2f0541b57.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/8af75bf2161edf00.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/1492e67ee33e5ffb.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/92360899ef6a9b03.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/03f5467bfe589012.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/99cb77fe028ffd63.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/c16866be73260633.woff2"
     ],
     "/blog/first-post/": [
-      "http://127.0.0.1:36227/_astro/fonts/b703bed24e27df2b.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/294fbab2f0541b57.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/8af75bf2161edf00.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/1492e67ee33e5ffb.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/92360899ef6a9b03.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/03f5467bfe589012.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/99cb77fe028ffd63.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/c16866be73260633.woff2"
+      "http://127.0.0.1:42149/_astro/fonts/b703bed24e27df2b.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/294fbab2f0541b57.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/8af75bf2161edf00.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/1492e67ee33e5ffb.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/92360899ef6a9b03.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/03f5467bfe589012.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/99cb77fe028ffd63.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/c16866be73260633.woff2"
     ],
     "/blog/typography-notes/": [
-      "http://127.0.0.1:36227/_astro/fonts/b703bed24e27df2b.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/294fbab2f0541b57.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/8af75bf2161edf00.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/1492e67ee33e5ffb.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/92360899ef6a9b03.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/03f5467bfe589012.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/99cb77fe028ffd63.woff2",
-      "http://127.0.0.1:36227/_astro/fonts/c16866be73260633.woff2"
+      "http://127.0.0.1:42149/_astro/fonts/b703bed24e27df2b.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/294fbab2f0541b57.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/8af75bf2161edf00.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/1492e67ee33e5ffb.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/92360899ef6a9b03.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/03f5467bfe589012.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/99cb77fe028ffd63.woff2",
+      "http://127.0.0.1:42149/_astro/fonts/c16866be73260633.woff2"
     ]
   },
   "system_font_chars": {
