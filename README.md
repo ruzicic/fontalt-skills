@@ -35,3 +35,13 @@ python tests/run_fixture.py plain-html --runs 3     # astro needs Node >= 22.23.
 ```
 
 Licences: `LICENSE`, `CREDITS.md`, and the font licences in each fixture.
+
+## Credits
+
+The `optimize-web-fonts` skill is based on [Shu Ding's font-optimization prompt](https://x.com/shuding/status/2115855028737200211). Thank you, Shu. See [CREDITS.md](CREDITS.md) for details.
+
+Built and maintained by [FontAlternatives.com](https://fontalternatives.com), free alternatives to premium fonts.
+
+## License
+
+MIT, see [LICENSE](LICENSE). Fixture fonts keep their own OFL licences.
