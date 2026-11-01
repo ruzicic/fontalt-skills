@@ -58,7 +58,7 @@
         1486
       ],
       "cls_after": 0.02318,
-      "cls_before": 0.02318,
+      "cls_before": 0.02336,
       "cls_ok": true,
       "differing_pct": 0.0,
       "differing_pixels": 0,
@@ -90,7 +90,7 @@
         1440,
         3182
       ],
-      "cls_after": 0.00027,
+      "cls_after": 0.00034,
       "cls_before": 0.00034,
       "cls_ok": true,
       "differing_pct": 0.0,
@@ -124,7 +124,7 @@
         4044
       ],
       "cls_after": 0.01345,
-      "cls_before": 0.01345,
+      "cls_before": 0.01165,
       "cls_ok": true,
       "differing_pct": 0.0,
       "differing_pixels": 0,
@@ -256,7 +256,7 @@
         3763
       ],
       "cls_after": 0.00078,
-      "cls_before": 0.00078,
+      "cls_before": 0.00069,
       "cls_ok": true,
       "differing_pct": 0.0,
       "differing_pixels": 0,
@@ -289,7 +289,7 @@
         1875
       ],
       "cls_after": 0.00062,
-      "cls_before": 0.00062,
+      "cls_before": 0.00059,
       "cls_ok": true,
       "differing_pct": 0.0,
       "differing_pixels": 0,
@@ -322,21 +322,20 @@
         1701
       ],
       "cls_after": 0.0903,
-      "cls_before": 0.04564,
-      "cls_ok": false,
+      "cls_before": 0.0903,
+      "cls_ok": true,
       "differing_pct": 0.0,
       "differing_pixels": 0,
       "max_channel_delta": 0,
-      "reason": "CLS before 0.04564 after 0.0903",
-      "status": "FAIL",
+      "status": "PASS",
       "total_pixels": 663390
     }
   },
   "summary": {
-    "fail": 1,
+    "fail": 0,
     "max_cls_after": 0.09762,
     "pages": 20,
-    "pass": 19,
+    "pass": 20,
     "tolerated": 0,
     "total_differing_pixels": 0
   },

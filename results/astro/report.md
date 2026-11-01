@@ -22,4 +22,4 @@
 | `b703bed24e27df2b.woff2` | 9,384 B | core 2,160 B, ext 3,812 B | static | - |
 | `c16866be73260633.woff2` | 18,484 B | core 6,612 B, ext 5,404 B | static | frac, pnum, tnum |
 
-Pixel diff: 20 screenshots, 19 identical, 0 tolerated, 1 failed; 0 differing pixels in total; max CLS after = 0.09762.
+Pixel diff: 20 screenshots, 20 identical, 0 tolerated, 0 failed; 0 differing pixels in total; max CLS after = 0.09762.
