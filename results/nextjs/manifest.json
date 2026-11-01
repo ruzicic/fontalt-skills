@@ -1,0 +1,483 @@
+{
+  "axes_mode": "exact",
+  "files": [
+    {
+      "after_total_bytes": 22000,
+      "axis_limits": {
+        "wght": [
+          400.0,
+          900.0
+        ]
+      },
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 100.0,
+            "tag": "wght"
+          }
+        ],
+        "bytes": 71272,
+        "codepoints": 889,
+        "features": {
+          "GPOS": [
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "aalt",
+            "case",
+            "ccmp",
+            "dnom",
+            "frac",
+            "locl",
+            "numr",
+            "ordn",
+            "sinf",
+            "ss01",
+            "ss02",
+            "ss03",
+            "ss04",
+            "ss06",
+            "ss07",
+            "ss08",
+            "ss09",
+            "ss10",
+            "ss11",
+            "subs",
+            "sups"
+          ]
+        },
+        "glyphs": 1159,
+        "hinted": true,
+        "reserved_font_names": []
+      },
+      "css": [
+        "@font-face {\n  font-family: \"geistMono\";\n  src: url(\"/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;\n}",
+        "@font-face {\n  font-family: \"geistMono\";\n  src: url(\"/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-ext.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0131, U+0134-0137, U+0139-013E, U+0141-0148, U+014A-014D, U+0150-017E;\n}"
+      ],
+      "family": "geistMono",
+      "features_dropped": [
+        "aalt",
+        "case",
+        "frac",
+        "ordn",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups"
+      ],
+      "features_kept": [
+        "ccmp",
+        "dnom",
+        "locl",
+        "mark",
+        "mkmk",
+        "numr"
+      ],
+      "output_stem": "geistmono-variable-s-p-1fz3wige2-h0o",
+      "outputs": [
+        {
+          "bytes": 10392,
+          "codepoints": 103,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": [
+                "dnom",
+                "locl",
+                "numr"
+              ]
+            },
+            "glyphs": 137,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geistmono-variable-s-p-1fz3wige2-h0o-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 11608,
+          "codepoints": 209,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 400.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [],
+              "GSUB": [
+                "locl"
+              ]
+            },
+            "glyphs": 281,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geistmono-variable-s-p-1fz3wige2-h0o-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0131, U+0134-0137, U+0139-013E, U+0141-0148, U+014A-014D, U+0150-017E"
+        }
+      ],
+      "rfn": [],
+      "saved_bytes_if_all_fetched": 49272,
+      "source": "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2"
+    },
+    {
+      "after_total_bytes": 38784,
+      "axis_limits": {},
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 100.0,
+            "tag": "wght"
+          }
+        ],
+        "bytes": 73504,
+        "codepoints": 728,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "aalt",
+            "case",
+            "ccmp",
+            "dlig",
+            "dnom",
+            "frac",
+            "liga",
+            "locl",
+            "numr",
+            "ordn",
+            "pnum",
+            "sinf",
+            "ss01",
+            "ss02",
+            "ss03",
+            "ss04",
+            "ss05",
+            "ss06",
+            "ss07",
+            "ss08",
+            "ss09",
+            "ss10",
+            "ss11",
+            "subs",
+            "sups",
+            "tnum"
+          ]
+        },
+        "glyphs": 975,
+        "hinted": true,
+        "reserved_font_names": []
+      },
+      "css": [
+        "@font-face {\n  font-family: \"geistSans\";\n  src: url(\"/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+0141, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;\n}",
+        "@font-face {\n  font-family: \"geistSans\";\n  src: url(\"/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-ext.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: italic;\n  font-display: swap;\n  unicode-range: U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0142-0148, U+014A-014D, U+0150-017E;\n}"
+      ],
+      "family": "geistSans",
+      "features_dropped": [
+        "aalt",
+        "case",
+        "dlig",
+        "frac",
+        "ordn",
+        "pnum",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss05",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups",
+        "tnum"
+      ],
+      "features_kept": [
+        "ccmp",
+        "dnom",
+        "kern",
+        "liga",
+        "locl",
+        "mark",
+        "mkmk",
+        "numr"
+      ],
+      "output_stem": "geist-italic-variable-s-p-10irncymhx47n",
+      "outputs": [
+        {
+          "bytes": 19772,
+          "codepoints": 104,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 100.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "ccmp",
+                "dnom",
+                "liga",
+                "locl",
+                "numr"
+              ]
+            },
+            "glyphs": 151,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+0141, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 19012,
+          "codepoints": 210,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 100.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "locl"
+              ]
+            },
+            "glyphs": 281,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geist-italic-variable-s-p-10irncymhx47n-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00AC, U+00AE-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0142-0148, U+014A-014D, U+0150-017E"
+        }
+      ],
+      "rfn": [],
+      "saved_bytes_if_all_fetched": 34720,
+      "source": "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2"
+    },
+    {
+      "after_total_bytes": 37948,
+      "axis_limits": {},
+      "before": {
+        "axes": [
+          {
+            "default": 400.0,
+            "max": 900.0,
+            "min": 100.0,
+            "tag": "wght"
+          }
+        ],
+        "bytes": 69576,
+        "codepoints": 728,
+        "features": {
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ],
+          "GSUB": [
+            "aalt",
+            "case",
+            "ccmp",
+            "dlig",
+            "dnom",
+            "frac",
+            "liga",
+            "locl",
+            "numr",
+            "ordn",
+            "pnum",
+            "sinf",
+            "ss01",
+            "ss02",
+            "ss03",
+            "ss04",
+            "ss05",
+            "ss06",
+            "ss07",
+            "ss08",
+            "ss09",
+            "ss10",
+            "ss11",
+            "subs",
+            "sups",
+            "tnum"
+          ]
+        },
+        "glyphs": 975,
+        "hinted": true,
+        "reserved_font_names": []
+      },
+      "css": [
+        "@font-face {\n  font-family: \"geistSans\";\n  src: url(\"/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00DF, U+00E7, U+00E9, U+00EF, U+00F1, U+00F3, U+00F8, U+00FC, U+0141-0142, U+0153, U+0179-017A, U+2013-2014, U+2018-2019, U+201C-201D, U+2026;\n}",
+        "@font-face {\n  font-family: \"geistSans\";\n  src: url(\"/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-ext.woff2\") format(\"woff2\");\n  font-weight: 100 900;\n  font-style: normal;\n  font-display: swap;\n  unicode-range: U+00A1-00A8, U+00AA-00AC, U+00AE-00B6, U+00B8-00DE, U+00E0-00E6, U+00E8, U+00EA-00EE, U+00F0, U+00F2, U+00F4-00F7, U+00F9-00FB, U+00FD-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0143-0148, U+014A-014D, U+0150-0152, U+0154-0178, U+017B-017E;\n}"
+      ],
+      "family": "geistSans",
+      "features_dropped": [
+        "aalt",
+        "case",
+        "dlig",
+        "frac",
+        "ordn",
+        "pnum",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "ss05",
+        "ss06",
+        "ss07",
+        "ss08",
+        "ss09",
+        "ss10",
+        "ss11",
+        "subs",
+        "sups"
+      ],
+      "features_kept": [
+        "ccmp",
+        "dnom",
+        "kern",
+        "liga",
+        "locl",
+        "mark",
+        "mkmk",
+        "numr",
+        "tnum"
+      ],
+      "output_stem": "geist-variable-s-p-2hh2rqmrrgs5n",
+      "outputs": [
+        {
+          "bytes": 20700,
+          "codepoints": 118,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 100.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "ccmp",
+                "dnom",
+                "liga",
+                "locl",
+                "numr",
+                "tnum"
+              ]
+            },
+            "glyphs": 184,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+          "label": "core",
+          "unicode_range": "U+0020-007E, U+00A0, U+00A9, U+00B7, U+00DF, U+00E7, U+00E9, U+00EF, U+00F1, U+00F3, U+00F8, U+00FC, U+0141-0142, U+0153, U+0179-017A, U+2013-2014, U+2018-2019, U+201C-201D, U+2026"
+        },
+        {
+          "bytes": 17248,
+          "codepoints": 196,
+          "facts": {
+            "axes": [
+              {
+                "default": 400.0,
+                "max": 900.0,
+                "min": 100.0,
+                "tag": "wght"
+              }
+            ],
+            "features": {
+              "GPOS": [
+                "kern"
+              ],
+              "GSUB": [
+                "locl"
+              ]
+            },
+            "glyphs": 264,
+            "hinted": false,
+            "reserved_font_names": []
+          },
+          "file": "geist-variable-s-p-2hh2rqmrrgs5n-ext.woff2",
+          "label": "ext",
+          "unicode_range": "U+00A1-00A8, U+00AA-00AC, U+00AE-00B6, U+00B8-00DE, U+00E0-00E6, U+00E8, U+00EA-00EE, U+00F0, U+00F2, U+00F4-00F7, U+00F9-00FB, U+00FD-0113, U+0116-012B, U+012E-0137, U+0139-013E, U+0143-0148, U+014A-014D, U+0150-0152, U+0154-0178, U+017B-017E"
+        }
+      ],
+      "rfn": [],
+      "saved_bytes_if_all_fetched": 31628,
+      "source": "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+    }
+  ],
+  "notes": [
+    "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2: wght: used 400-500 inside 400-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2: wght: used 300-700 inside 100-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)",
+    "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2: wght: used 200-800 inside 100-900; --axes trim would cut further (re-scales deltas, may shift glyphs sub-pixel)"
+  ],
+  "preload_mode": "auto",
+  "preload_replacements": {
+    "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2",
+    "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+    "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2"
+  },
+  "totals": {
+    "after_bytes_core_plus_extended": 98732,
+    "before_bytes": 214352
+  },
+  "url_prefix": "/fonts/optimized/"
+}

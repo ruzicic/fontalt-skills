@@ -1,0 +1,211 @@
+{
+  "pages": {
+    "/@1440@dark": {
+      "after_size": [
+        1440,
+        1329
+      ],
+      "before_size": [
+        1440,
+        1329
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1913760
+    },
+    "/@1440@light": {
+      "after_size": [
+        1440,
+        1329
+      ],
+      "before_size": [
+        1440,
+        1329
+      ],
+      "cls_after": 0.00311,
+      "cls_before": 0.00311,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1913760
+    },
+    "/@390@dark": {
+      "after_size": [
+        390,
+        1799
+      ],
+      "before_size": [
+        390,
+        1799
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 701610
+    },
+    "/@390@light": {
+      "after_size": [
+        390,
+        1799
+      ],
+      "before_size": [
+        390,
+        1799
+      ],
+      "cls_after": 0.03358,
+      "cls_before": 0.03358,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 701610
+    },
+    "/blog/@1440@dark": {
+      "after_size": [
+        1440,
+        900
+      ],
+      "before_size": [
+        1440,
+        900
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1296000
+    },
+    "/blog/@1440@light": {
+      "after_size": [
+        1440,
+        900
+      ],
+      "before_size": [
+        1440,
+        900
+      ],
+      "cls_after": 0.00012,
+      "cls_before": 0.00012,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1296000
+    },
+    "/blog/@390@dark": {
+      "after_size": [
+        390,
+        900
+      ],
+      "before_size": [
+        390,
+        900
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 351000
+    },
+    "/blog/@390@light": {
+      "after_size": [
+        390,
+        900
+      ],
+      "before_size": [
+        390,
+        900
+      ],
+      "cls_after": 0.01709,
+      "cls_before": 0.01332,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 351000
+    },
+    "/notes/@1440@dark": {
+      "after_size": [
+        1440,
+        900
+      ],
+      "before_size": [
+        1440,
+        900
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1296000
+    },
+    "/notes/@1440@light": {
+      "after_size": [
+        1440,
+        900
+      ],
+      "before_size": [
+        1440,
+        900
+      ],
+      "cls_after": 0,
+      "cls_before": 0,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1296000
+    },
+    "/notes/@390@dark": {
+      "after_size": [
+        390,
+        900
+      ],
+      "before_size": [
+        390,
+        900
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 351000
+    },
+    "/notes/@390@light": {
+      "after_size": [
+        390,
+        900
+      ],
+      "before_size": [
+        390,
+        900
+      ],
+      "cls_after": 0,
+      "cls_before": 0,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 351000
+    }
+  },
+  "summary": {
+    "fail": 0,
+    "max_cls_after": 0.03358,
+    "pages": 12,
+    "pass": 12,
+    "tolerated": 0,
+    "total_differing_pixels": 0
+  },
+  "tolerance_pct": 0.02
+}

@@ -1,0 +1,518 @@
+{
+  "fixture": "nextjs",
+  "runs_green": 3,
+  "runs": 3,
+  "all_green": true,
+  "runs_detail": [
+    {
+      "run": 1,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /blog/": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /notes/": true
+      },
+      "seconds": 180.1,
+      "started": "2026-11-01T15:26:59+01:00",
+      "font_bytes_before": 1286112,
+      "font_bytes_after": 377704,
+      "saved_pct": 70.6,
+      "per_page": [
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 12,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.0209,
+        "pages": 12,
+        "pass": 12,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.03358,
+      "cls_after_max": 0.0209,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+          "bytes_before": 71272,
+          "bytes_after_all_pieces": 22000
+        },
+        {
+          "source": "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+          "bytes_before": 73504,
+          "bytes_after_all_pieces": 38784
+        },
+        {
+          "source": "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2",
+          "bytes_before": 69576,
+          "bytes_after_all_pieces": 37948
+        }
+      ],
+      "axis_trim_experiment": {
+        "font_bytes_after": 353096,
+        "saved_pct": 72.5,
+        "extra_saved_bytes_vs_exact": 24608,
+        "differing_pixels": 38703,
+        "worst_page_differing_pct": 0.86159,
+        "pages_failing": 12,
+        "pixels_per_page": {
+          "/@1440@dark": 5552,
+          "/@1440@light": 5628,
+          "/@390@dark": 5979,
+          "/@390@light": 6045,
+          "/blog/@1440@dark": 2194,
+          "/blog/@1440@light": 2221,
+          "/blog/@390@dark": 1640,
+          "/blog/@390@light": 1664,
+          "/notes/@1440@dark": 2155,
+          "/notes/@1440@light": 2189,
+          "/notes/@390@dark": 1703,
+          "/notes/@390@light": 1733
+        }
+      },
+      "rfn_renames": []
+    },
+    {
+      "run": 2,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /blog/": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /notes/": true
+      },
+      "seconds": 125.1,
+      "started": "2026-11-01T15:29:04+01:00",
+      "font_bytes_before": 1286112,
+      "font_bytes_after": 377704,
+      "saved_pct": 70.6,
+      "per_page": [
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 12,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.03358,
+        "pages": 12,
+        "pass": 12,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.03358,
+      "cls_after_max": 0.03358,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+          "bytes_before": 71272,
+          "bytes_after_all_pieces": 22000
+        },
+        {
+          "source": "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+          "bytes_before": 73504,
+          "bytes_after_all_pieces": 38784
+        },
+        {
+          "source": "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2",
+          "bytes_before": 69576,
+          "bytes_after_all_pieces": 37948
+        }
+      ],
+      "axis_trim_experiment": null,
+      "rfn_renames": []
+    },
+    {
+      "run": 3,
+      "green": true,
+      "checks": {
+        "pixels": true,
+        "cls": true,
+        "bytes_saved_ge_20pct": true,
+        "idempotent": true,
+        "noise_floor_zero": true,
+        "preload_policy_kept": true,
+        "no -ext.woff2 files on /blog/": true,
+        "no -ext.woff2 files on /": true,
+        "-ext.woff2 files fetched on /notes/": true
+      },
+      "seconds": 152.4,
+      "started": "2026-11-01T15:31:36+01:00",
+      "font_bytes_before": 1286112,
+      "font_bytes_after": 377704,
+      "saved_pct": 70.6,
+      "per_page": [
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 50864,
+          "before_bytes": 214352,
+          "files_after": 3,
+          "files_before": 3,
+          "page": "/blog/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 76.3
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@1440",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        },
+        {
+          "after_bytes": 87124,
+          "before_bytes": 214352,
+          "files_after": 5,
+          "files_before": 3,
+          "page": "/notes/@390",
+          "preloads_after": [
+            "/fonts/optimized/geist-italic-variable-s-p-10irncymhx47n-core.woff2",
+            "/fonts/optimized/geist-variable-s-p-2hh2rqmrrgs5n-core.woff2",
+            "/fonts/optimized/geistmono-variable-s-p-1fz3wige2-h0o-core.woff2"
+          ],
+          "preloads_before": [
+            "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+            "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+            "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+          ],
+          "saved_pct": 59.4
+        }
+      ],
+      "differing_pixels": 0,
+      "screenshots": 12,
+      "pixel_summary": {
+        "fail": 0,
+        "max_cls_after": 0.03358,
+        "pages": 12,
+        "pass": 12,
+        "tolerated": 0,
+        "total_differing_pixels": 0
+      },
+      "tolerated": {},
+      "cls_before_max": 0.03358,
+      "cls_after_max": 0.03358,
+      "noise_floor_differing_pixels": 0,
+      "font_files": [
+        {
+          "source": "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+          "bytes_before": 71272,
+          "bytes_after_all_pieces": 22000
+        },
+        {
+          "source": "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+          "bytes_before": 73504,
+          "bytes_after_all_pieces": 38784
+        },
+        {
+          "source": "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2",
+          "bytes_before": 69576,
+          "bytes_after_all_pieces": 37948
+        }
+      ],
+      "axis_trim_experiment": null,
+      "rfn_renames": []
+    }
+  ]
+}

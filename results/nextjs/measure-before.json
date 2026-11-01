@@ -1,0 +1,95 @@
+{
+  "fonts": [],
+  "pages": {
+    "/@1440": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/@390": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 390
+    },
+    "/blog/@1440": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/blog/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/blog/@390": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/blog/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 390
+    },
+    "/notes/@1440": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/notes/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/notes/@390": {
+      "font_bytes": 214352,
+      "font_files": {
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2": 71272,
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2": 73504,
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2": 69576
+      },
+      "path": "/notes/",
+      "preloads": [
+        "/_next/static/media/GeistMono_Variable-s.p.1fz3wige2_h0o.woff2",
+        "/_next/static/media/Geist_Italic_Variable-s.p.10irncymhx47n.woff2",
+        "/_next/static/media/Geist_Variable-s.p.2hh2rqmrrgs5n.woff2"
+      ],
+      "viewport": 390
+    }
+  }
+}
