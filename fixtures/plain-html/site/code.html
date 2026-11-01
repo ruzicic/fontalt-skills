@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code notes</title>
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/fallbacks.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="/">Quiet Type</a>
+  <a href="/post.html">Short post</a>
+  <a href="/code.html">Code notes</a>
+</header>
+<main>
+  <h1>Code notes</h1>
+  <p>Monospaced samples set in JetBrains Mono, with the default ligatures on and, in the second block, switched off with the slashed zero turned on.</p>
+<pre><code><span class="kw">const</span> total = items.filter(x =&gt; x.price != 0 &amp;&amp; x.qty &gt;= 1).length; // 100% ok
+<span class="kw">if</span> (a === b || c &lt;= d) { return a -&gt; b; }  // café, naïve, Łódź</code></pre>
+<pre class="nolig"><code>0O 1lI != === =&gt; &lt;= &gt;= -&gt; 2026-11-01 00:00:00 /* zero feature */
+<span class="kw">def</span> price(items): return sum(i.qty * i.unit for i in items)</code></pre>
+  <p>Back to prose: a short paragraph in the serif with an <em>italic</em> word.</p>
+</main>
+<footer>2026 Quiet Type</footer>
+</body>
+</html>

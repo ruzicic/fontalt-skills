@@ -1,0 +1,47 @@
+{
+  "name": "nextjs",
+  "kind": "npm",
+  "source": ".",
+  "install": [
+    "npm",
+    "ci",
+    "--no-audit",
+    "--no-fund",
+    "--loglevel=error"
+  ],
+  "build": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "dist": "out",
+  "paths": [
+    "/",
+    "/blog/",
+    "/notes/"
+  ],
+  "url_prefix": "/fonts/optimized/",
+  "preload": "auto",
+  "expect": {
+    "no_font_substring_on": [
+      {
+        "path": "/blog/",
+        "substr": "-ext.woff2"
+      },
+      {
+        "path": "/",
+        "substr": "-ext.woff2"
+      }
+    ],
+    "font_substring_on": [
+      {
+        "path": "/notes/",
+        "substr": "-ext.woff2"
+      }
+    ]
+  },
+  "scan_paths": [
+    "/",
+    "/blog/"
+  ]
+}
