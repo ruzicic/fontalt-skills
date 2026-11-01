@@ -1,0 +1,255 @@
+{
+  "fonts": [],
+  "pages": {
+    "/@1440": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/@390": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 390
+    },
+    "/about/@1440": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/about/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/about/@390": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/about/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 390
+    },
+    "/blog/@1440": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/blog/@390": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 390
+    },
+    "/blog/first-post/@1440": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/first-post/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/blog/first-post/@390": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/first-post/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 390
+    },
+    "/blog/typography-notes/@1440": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/typography-notes/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 1440
+    },
+    "/blog/typography-notes/@390": {
+      "font_bytes": 109980,
+      "font_files": {
+        "/_astro/fonts/03f5467bfe589012.woff2": 18292,
+        "/_astro/fonts/1492e67ee33e5ffb.woff2": 17524,
+        "/_astro/fonts/294fbab2f0541b57.woff2": 17208,
+        "/_astro/fonts/8af75bf2161edf00.woff2": 9372,
+        "/_astro/fonts/92360899ef6a9b03.woff2": 9796,
+        "/_astro/fonts/99cb77fe028ffd63.woff2": 9920,
+        "/_astro/fonts/b703bed24e27df2b.woff2": 9384,
+        "/_astro/fonts/c16866be73260633.woff2": 18484
+      },
+      "path": "/blog/typography-notes/",
+      "preloads": [
+        "/_astro/fonts/03f5467bfe589012.woff2",
+        "/_astro/fonts/1492e67ee33e5ffb.woff2",
+        "/_astro/fonts/294fbab2f0541b57.woff2",
+        "/_astro/fonts/8af75bf2161edf00.woff2",
+        "/_astro/fonts/92360899ef6a9b03.woff2",
+        "/_astro/fonts/99cb77fe028ffd63.woff2",
+        "/_astro/fonts/b703bed24e27df2b.woff2",
+        "/_astro/fonts/c16866be73260633.woff2"
+      ],
+      "viewport": 390
+    }
+  }
+}

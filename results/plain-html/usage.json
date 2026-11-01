@@ -1,0 +1,803 @@
+{
+  "base_url": "http://127.0.0.1:35191",
+  "files": [
+    {
+      "axes_in_file": {
+        "wght": [
+          100.0,
+          400.0,
+          800.0
+        ]
+      },
+      "axis_ranges_used": {
+        "wght": [
+          400.0,
+          400.0
+        ]
+      },
+      "bytes": 15196,
+      "chars": [
+        321,
+        378
+      ],
+      "family": "JetBrains Mono Variable",
+      "features_used": [],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/jetbrains-mono-latin-ext-wght-normal.woff2",
+      "pages": {
+        "/code.html": [
+          321,
+          378
+        ]
+      },
+      "path": "/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "JetBrains Mono Variable",
+          "stretch": "normal",
+          "style": "normal",
+          "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          "weight": "100 800"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/jetbrains-mono-latin-ext-wght-normal.woff2"
+    },
+    {
+      "axes_in_file": {
+        "wght": [
+          100.0,
+          400.0,
+          800.0
+        ]
+      },
+      "axis_ranges_used": {
+        "wght": [
+          400.0,
+          700.0
+        ]
+      },
+      "bytes": 40404,
+      "chars": [
+        32,
+        33,
+        37,
+        38,
+        40,
+        41,
+        42,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        54,
+        58,
+        59,
+        60,
+        61,
+        62,
+        73,
+        79,
+        95,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        233,
+        239,
+        243
+      ],
+      "family": "JetBrains Mono Variable",
+      "features_used": [
+        "zero"
+      ],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/jetbrains-mono-latin-wght-normal.woff2",
+      "pages": {
+        "/": [
+          32,
+          45,
+          61,
+          95,
+          97,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          110,
+          111,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          233,
+          239
+        ],
+        "/code.html": [
+          32,
+          33,
+          37,
+          38,
+          40,
+          41,
+          42,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          54,
+          58,
+          59,
+          60,
+          61,
+          62,
+          73,
+          79,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          233,
+          239,
+          243
+        ]
+      },
+      "path": "/fonts/original/jetbrains-mono-latin-wght-normal.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "JetBrains Mono Variable",
+          "stretch": "normal",
+          "style": "normal",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          "weight": "100 800"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/jetbrains-mono-latin-wght-normal.woff2"
+    },
+    {
+      "axes_in_file": {
+        "opsz": [
+          8.0,
+          20.0,
+          60.0
+        ],
+        "wght": [
+          200.0,
+          400.0,
+          900.0
+        ]
+      },
+      "axis_ranges_used": {
+        "opsz": [
+          18,
+          18
+        ],
+        "wght": [
+          400.0,
+          400.0
+        ]
+      },
+      "bytes": 110324,
+      "chars": [
+        321
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_used": [],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-italic.woff2",
+      "pages": {
+        "/": [
+          321
+        ]
+      },
+      "path": "/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "Source Serif 4 Variable",
+          "stretch": "normal",
+          "style": "italic",
+          "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          "weight": "200 900"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/source-serif-4-latin-ext-opsz-italic.woff2"
+    },
+    {
+      "axes_in_file": {
+        "opsz": [
+          8.0,
+          20.0,
+          60.0
+        ],
+        "wght": [
+          200.0,
+          400.0,
+          900.0
+        ]
+      },
+      "axis_ranges_used": {
+        "opsz": [
+          12.96,
+          18
+        ],
+        "wght": [
+          400.0,
+          400.0
+        ]
+      },
+      "bytes": 100872,
+      "chars": [
+        321,
+        322,
+        377,
+        378
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_used": [],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-normal.woff2",
+      "pages": {
+        "/": [
+          321,
+          322,
+          377,
+          378
+        ]
+      },
+      "path": "/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "Source Serif 4 Variable",
+          "stretch": "normal",
+          "style": "normal",
+          "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+          "weight": "200 900"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/source-serif-4-latin-ext-opsz-normal.woff2"
+    },
+    {
+      "axes_in_file": {
+        "opsz": [
+          8.0,
+          20.0,
+          60.0
+        ],
+        "wght": [
+          200.0,
+          400.0,
+          900.0
+        ]
+      },
+      "axis_ranges_used": {
+        "opsz": [
+          12.96,
+          18
+        ],
+        "wght": [
+          400.0,
+          800.0
+        ]
+      },
+      "bytes": 130188,
+      "chars": [
+        32,
+        44,
+        46,
+        66,
+        73,
+        81,
+        82,
+        84,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        8212,
+        8217,
+        8220,
+        8221
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_used": [],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-italic.woff2",
+      "pages": {
+        "/": [
+          32,
+          44,
+          46,
+          66,
+          81,
+          82,
+          84,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          8212,
+          8217,
+          8220,
+          8221
+        ],
+        "/code.html": [
+          32,
+          97,
+          99,
+          105,
+          108,
+          116
+        ],
+        "/post.html": [
+          32,
+          46,
+          73,
+          97,
+          98,
+          99,
+          100,
+          101,
+          104,
+          105,
+          108,
+          110,
+          111,
+          114,
+          115,
+          116,
+          117,
+          119,
+          120
+        ]
+      },
+      "path": "/fonts/original/source-serif-4-latin-opsz-italic.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "Source Serif 4 Variable",
+          "stretch": "normal",
+          "style": "italic",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          "weight": "200 900"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/source-serif-4-latin-opsz-italic.woff2"
+    },
+    {
+      "axes_in_file": {
+        "opsz": [
+          8.0,
+          20.0,
+          60.0
+        ],
+        "wght": [
+          200.0,
+          400.0,
+          900.0
+        ]
+      },
+      "axis_ranges_used": {
+        "opsz": [
+          12.96,
+          45
+        ],
+        "wght": [
+          400.0,
+          700.0
+        ]
+      },
+      "bytes": 122360,
+      "chars": [
+        32,
+        37,
+        40,
+        41,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        61,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        87,
+        89,
+        90,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        169,
+        183,
+        223,
+        231,
+        233,
+        239,
+        241,
+        243,
+        248,
+        252,
+        339,
+        8211,
+        8212,
+        8217,
+        8220,
+        8221,
+        8230,
+        8364,
+        8482
+      ],
+      "family": "Source Serif 4 Variable",
+      "features_used": [
+        "lnum",
+        "smcp",
+        "tnum"
+      ],
+      "local_file": "/workspace/font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-normal.woff2",
+      "pages": {
+        "/": [
+          32,
+          37,
+          40,
+          41,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          87,
+          89,
+          90,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          169,
+          183,
+          223,
+          231,
+          233,
+          239,
+          241,
+          243,
+          248,
+          252,
+          339,
+          8212,
+          8217,
+          8220,
+          8221,
+          8230,
+          8364,
+          8482
+        ],
+        "/code.html": [
+          32,
+          44,
+          46,
+          48,
+          50,
+          54,
+          58,
+          66,
+          67,
+          74,
+          77,
+          81,
+          83,
+          84,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          114,
+          115,
+          116,
+          117,
+          119,
+          121,
+          122
+        ],
+        "/post.html": [
+          32,
+          40,
+          41,
+          44,
+          46,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          58,
+          61,
+          65,
+          67,
+          73,
+          76,
+          78,
+          81,
+          82,
+          83,
+          84,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          8211,
+          8212,
+          8217,
+          8220,
+          8221,
+          8230
+        ]
+      },
+      "path": "/fonts/original/source-serif-4-latin-opsz-normal.woff2",
+      "rules": [
+        {
+          "descriptors": {},
+          "display": "swap",
+          "family": "Source Serif 4 Variable",
+          "stretch": "normal",
+          "style": "normal",
+          "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+          "weight": "200 900"
+        }
+      ],
+      "url": "http://127.0.0.1:35191/fonts/original/source-serif-4-latin-opsz-normal.woff2"
+    }
+  ],
+  "notes": [],
+  "paths": [
+    "/",
+    "/post.html",
+    "/code.html"
+  ],
+  "preloads": {},
+  "system_font_chars": {
+    "JetBrains Mono Fallback": "\n",
+    "Source Serif 4 Fallback": "\n‐。さすでのはまれォシステトフムン中也体使字文日本用示章系统表語"
+  },
+  "unexercised_font_files": []
+}

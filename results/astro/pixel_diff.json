@@ -1,0 +1,344 @@
+{
+  "pages": {
+    "/@1440@dark": {
+      "after_size": [
+        1440,
+        1218
+      ],
+      "before_size": [
+        1440,
+        1218
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1753920
+    },
+    "/@1440@light": {
+      "after_size": [
+        1440,
+        1218
+      ],
+      "before_size": [
+        1440,
+        1218
+      ],
+      "cls_after": 0.09762,
+      "cls_before": 0.09762,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1753920
+    },
+    "/@390@dark": {
+      "after_size": [
+        390,
+        1486
+      ],
+      "before_size": [
+        390,
+        1486
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 579540
+    },
+    "/@390@light": {
+      "after_size": [
+        390,
+        1486
+      ],
+      "before_size": [
+        390,
+        1486
+      ],
+      "cls_after": 0.02318,
+      "cls_before": 0.02318,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 579540
+    },
+    "/about/@1440@dark": {
+      "after_size": [
+        1440,
+        3182
+      ],
+      "before_size": [
+        1440,
+        3182
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 4582080
+    },
+    "/about/@1440@light": {
+      "after_size": [
+        1440,
+        3182
+      ],
+      "before_size": [
+        1440,
+        3182
+      ],
+      "cls_after": 0.00027,
+      "cls_before": 0.00034,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 4582080
+    },
+    "/about/@390@dark": {
+      "after_size": [
+        464,
+        4044
+      ],
+      "before_size": [
+        464,
+        4044
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1876416
+    },
+    "/about/@390@light": {
+      "after_size": [
+        464,
+        4044
+      ],
+      "before_size": [
+        464,
+        4044
+      ],
+      "cls_after": 0.01345,
+      "cls_before": 0.01345,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1876416
+    },
+    "/blog/@1440@dark": {
+      "after_size": [
+        1440,
+        2087
+      ],
+      "before_size": [
+        1440,
+        2087
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 3005280
+    },
+    "/blog/@1440@light": {
+      "after_size": [
+        1440,
+        2087
+      ],
+      "before_size": [
+        1440,
+        2087
+      ],
+      "cls_after": 0.00032,
+      "cls_before": 0.00029,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 3005280
+    },
+    "/blog/@390@dark": {
+      "after_size": [
+        390,
+        1934
+      ],
+      "before_size": [
+        390,
+        1934
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 754260
+    },
+    "/blog/@390@light": {
+      "after_size": [
+        390,
+        1934
+      ],
+      "before_size": [
+        390,
+        1934
+      ],
+      "cls_after": 0.00311,
+      "cls_before": 0.00221,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 754260
+    },
+    "/blog/first-post/@1440@dark": {
+      "after_size": [
+        1440,
+        2906
+      ],
+      "before_size": [
+        1440,
+        2906
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 4184640
+    },
+    "/blog/first-post/@1440@light": {
+      "after_size": [
+        1440,
+        2906
+      ],
+      "before_size": [
+        1440,
+        2906
+      ],
+      "cls_after": 0.00011,
+      "cls_before": 0.00011,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 4184640
+    },
+    "/blog/first-post/@390@dark": {
+      "after_size": [
+        390,
+        3763
+      ],
+      "before_size": [
+        390,
+        3763
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1467570
+    },
+    "/blog/first-post/@390@light": {
+      "after_size": [
+        390,
+        3763
+      ],
+      "before_size": [
+        390,
+        3763
+      ],
+      "cls_after": 0.00078,
+      "cls_before": 0.00078,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 1467570
+    },
+    "/blog/typography-notes/@1440@dark": {
+      "after_size": [
+        1440,
+        1875
+      ],
+      "before_size": [
+        1440,
+        1875
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 2700000
+    },
+    "/blog/typography-notes/@1440@light": {
+      "after_size": [
+        1440,
+        1875
+      ],
+      "before_size": [
+        1440,
+        1875
+      ],
+      "cls_after": 0.00062,
+      "cls_before": 0.00062,
+      "cls_ok": true,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 2700000
+    },
+    "/blog/typography-notes/@390@dark": {
+      "after_size": [
+        390,
+        1701
+      ],
+      "before_size": [
+        390,
+        1701
+      ],
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "status": "PASS",
+      "total_pixels": 663390
+    },
+    "/blog/typography-notes/@390@light": {
+      "after_size": [
+        390,
+        1701
+      ],
+      "before_size": [
+        390,
+        1701
+      ],
+      "cls_after": 0.0903,
+      "cls_before": 0.04564,
+      "cls_ok": false,
+      "differing_pct": 0.0,
+      "differing_pixels": 0,
+      "max_channel_delta": 0,
+      "reason": "CLS before 0.04564 after 0.0903",
+      "status": "FAIL",
+      "total_pixels": 663390
+    }
+  },
+  "summary": {
+    "fail": 1,
+    "max_cls_after": 0.09762,
+    "pages": 20,
+    "pass": 19,
+    "tolerated": 0,
+    "total_differing_pixels": 0
+  },
+  "tolerance_pct": 0.02
+}
