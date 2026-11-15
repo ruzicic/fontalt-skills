@@ -1,4 +1,4 @@
-# font-skills
+# fontalt-skills
 
 Two agent skills for web fonts, by FontAlternatives.
 
@@ -10,11 +10,11 @@ Two agent skills for web fonts, by FontAlternatives.
 ## Install
 
 ```bash
-npx skills add ruzicic/font-skills --skill webfont-audit
-npx skills add ruzicic/font-skills --skill optimize-web-fonts
+npx skills add ruzicic/fontalt-skills --skill webfont-audit
+npx skills add ruzicic/fontalt-skills --skill optimize-web-fonts
 ```
 
-See both skills with `npx skills add ruzicic/font-skills --list`.
+See both skills with `npx skills add ruzicic/fontalt-skills --list`.
 
 Optional, for the `webfont-audit` catalogue and licence checks:
 
