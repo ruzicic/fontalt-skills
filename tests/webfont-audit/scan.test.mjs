@@ -119,6 +119,7 @@ test("the DESIGN 1.6 example detail is emitted exactly", () => {
 	const dir = tmpDir("example");
 	fs.writeFileSync(path.join(dir, "a.css"), '@font-face {\n  font-family: "Inter";\n  src: url("inter.woff2") format("woff2");\n}\n');
 	const [f] = scan(dir).findings;
+	fs.rmSync(dir, { recursive: true, force: true });
 	assert.equal(
 		f.detail,
 		'No font-display on this @font-face for "Inter": the browser default (auto) can hide the text for up to about 3 seconds while the font downloads. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: add "font-display: swap;" to this rule.',
