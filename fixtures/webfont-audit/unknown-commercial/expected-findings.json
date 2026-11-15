@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "mixed-cdn",
+      "family": null,
+      "file": "index.html",
+      "line": 6,
+      "detail": "Web fonts load from 2 origins: self-hosted (this project) (first at css/fonts.css:2), use.typekit.net (first at index.html:6). Each extra origin needs its own connection before its fonts can download, and fonts split across hosts are harder to preload, cache and audit. Fix: serve all web fonts from one origin, ideally your own."
+    }
+  ]
+}

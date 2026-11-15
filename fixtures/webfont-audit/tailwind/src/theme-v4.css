@@ -1,0 +1,5 @@
+/* Tailwind v4 style theme variables */
+@theme {
+  --font-display: "Cabinet Grotesk", sans-serif;
+  --font-weight-hero: 700;
+}

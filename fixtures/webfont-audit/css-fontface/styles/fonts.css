@@ -1,0 +1,75 @@
+/* Text face with no font-display: missing-font-display */
+@font-face {
+  font-family: "Source Serif";
+  src: url("../fonts/source-serif-400.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/* font-display: auto counts as missing */
+@font-face {
+  font-family: "Source Serif";
+  src: url("../fonts/source-serif-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: auto;
+}
+
+/* block on a text family: font-display-block */
+@font-face {
+  font-family: "Brand Display";
+  src: url("../fonts/brand-display-800.woff2") format("woff2");
+  font-weight: 800;
+  font-display: block;
+}
+
+/* block on an icon family: correct, no finding */
+@font-face {
+  font-family: "Acme Icons";
+  src: url("../fonts/acme-icons.woff2") format("woff2");
+  font-display: block;
+}
+
+/* icon family with no font-display: missing-font-display, fix is block */
+@font-face {
+  font-family: "Docs Symbols";
+  src: url("../fonts/docs-symbols.woff2") format("woff2");
+}
+
+/* local()-only fallback face: exempt */
+@font-face {
+  font-family: "Source Serif Fallback";
+  src: local("Georgia");
+  size-adjust: 104%;
+  ascent-override: 92%;
+}
+
+/* swap: no finding; a weight range is never an unused weight */
+@font-face {
+  font-family: "Body Sans";
+  src: url("../fonts/body-sans-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* optional: no finding */
+@font-face {
+  font-family: "Code Mono";
+  src: url("../fonts/code-mono-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: optional;
+}
+
+/* fallback: no finding; weight 600 is never used: unused-face-weight */
+@font-face {
+  font-family: "Code Mono";
+  src: url("../fonts/code-mono-600.woff2") format("woff2");
+  font-weight: 600;
+  font-display: fallback;
+}
+
+/* font-display from a preprocessor variable is not checked */
+@font-face {
+  font-family: "Body Sans";
+  src: url("../fonts/body-sans-italic.woff2") format("woff2");
+  font-style: italic;
+  font-display: var(--display);
+}

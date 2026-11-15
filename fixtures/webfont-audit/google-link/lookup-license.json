@@ -1,0 +1,25 @@
+{
+  "OFL-1.1": {
+    "status": "ok",
+    "disclaimer": "This is a summary of publicly documented font-licence terms and of the weights, axes and italics in the FontAlternatives catalogue. It is not legal advice. Read the official licence and, for a commercial or redistribution decision, take advice for your own use case.",
+    "source": "FontAlternatives catalogue",
+    "data_updated_at": "2026-11-15T14:23:45+01:00",
+    "source_commit": "a3d997d2c73ae547cdf0466fa127de3d2d824907",
+    "catalogue_version": "3f9c2a7d41b0",
+    "license": {
+      "id": "OFL-1.1",
+      "name": "SIL Open Font License 1.1",
+      "short_name": "OFL",
+      "official_url": "https://scripts.sil.org/OFL",
+      "commercial_use": true,
+      "modification_allowed": true,
+      "redistribution_allowed": true,
+      "attribution_required": false,
+      "copyleft": true,
+      "can_sell_font": false,
+      "summary": "Stored licence description (frozen fixture; the live tool returns the site's text unchanged).",
+      "guide_url": "https://fontalternatives.com/licenses/?utm_source=webfont-audit&utm_medium=mcp",
+      "font_count": 173
+    }
+  }
+}

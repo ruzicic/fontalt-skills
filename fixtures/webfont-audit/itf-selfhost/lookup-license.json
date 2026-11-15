@@ -1,0 +1,25 @@
+{
+  "ITF Free Font License": {
+    "status": "ok",
+    "disclaimer": "This is a summary of publicly documented font-licence terms and of the weights, axes and italics in the FontAlternatives catalogue. It is not legal advice. Read the official licence and, for a commercial or redistribution decision, take advice for your own use case.",
+    "source": "FontAlternatives catalogue",
+    "data_updated_at": "2026-11-15T14:23:45+01:00",
+    "source_commit": "a3d997d2c73ae547cdf0466fa127de3d2d824907",
+    "catalogue_version": "3f9c2a7d41b0",
+    "license": {
+      "id": "ITF Free Font License",
+      "name": "ITF Free Font License",
+      "short_name": "ITF FFL",
+      "official_url": "https://www.fontshare.com/licenses/itf-ffl",
+      "commercial_use": true,
+      "modification_allowed": false,
+      "redistribution_allowed": false,
+      "attribution_required": false,
+      "copyleft": false,
+      "can_sell_font": false,
+      "summary": "Free for personal and commercial use, in any medium, with no attribution required. You may not modify, subset, convert or redistribute the font files. You may self-host the official files on your own site; the Fontshare API is optional. This licence is not open source.",
+      "guide_url": "https://fontalternatives.com/licenses/?utm_source=webfont-audit&utm_medium=mcp",
+      "font_count": 5
+    }
+  }
+}
