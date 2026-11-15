@@ -1,40 +1,70 @@
 # Install
 
-The skill is the folder `skills/optimize-web-fonts/` (a `SKILL.md` plus `scripts/` and `references/`), in the
-[Agent Skills](https://agentskills.io) format. Copy or symlink that folder where your agent looks for skills.
+Two skills live in this repo, each a folder under `skills/` (a `SKILL.md` plus `scripts/` and `references/`) in the
+[Agent Skills](https://agentskills.io) format: `webfont-audit` and `optimize-web-fonts`.
 
-## Claude Code
+## Install with one command
+
 ```bash
-git clone https://github.com/ruzicic/font-skills.git
-# for one project:
-mkdir -p .claude/skills && cp -r font-skills/skills/optimize-web-fonts .claude/skills/
-# or for every project:
-mkdir -p ~/.claude/skills && cp -r font-skills/skills/optimize-web-fonts ~/.claude/skills/
+npx skills add ruzicic/font-skills --skill webfont-audit
+npx skills add ruzicic/font-skills --skill optimize-web-fonts
 ```
-Then ask: "Optimize this site's web fonts" (or run `/optimize-web-fonts`).
 
-## Cursor
-Cursor loads skills from `.agents/skills/` or `.cursor/skills/` (project) and `~/.agents/skills/` or `~/.cursor/skills/`
-(global) - [docs](https://cursor.com/docs/skills). It also reads the Claude and Codex directories.
+- `-g`: install for all your projects instead of this one.
+- `-a claude-code`: install for one agent only (for example `-a cursor` or `-a codex`).
+- `-y`: no prompts.
+- `--list`: show the skills in the repo without installing (`npx skills add ruzicic/font-skills --list`).
+
+## Connect the MCP server (webfont-audit only, optional)
+
 ```bash
-mkdir -p .agents/skills && cp -r font-skills/skills/optimize-web-fonts .agents/skills/      # project, shared with Codex
-# or global: mkdir -p ~/.cursor/skills && cp -r font-skills/skills/optimize-web-fonts ~/.cursor/skills/
+claude mcp add --transport http fontalternatives https://mcp.fontalt.com/mcp
 ```
-Then ask the agent to optimize the site's web fonts.
 
-## Codex CLI
-Codex scans `.agents/skills/` from the working directory up to the repo root, plus `~/.agents/skills/` for you personally
-([docs](https://learn.chatgpt.com/docs/build-skills.md)). Older releases used `~/.codex/skills`, which is still read.
-```bash
-mkdir -p .agents/skills && cp -r font-skills/skills/optimize-web-fonts .agents/skills/      # project
-# or personal: mkdir -p ~/.agents/skills && cp -r font-skills/skills/optimize-web-fonts ~/.agents/skills/
-```
-Then ask: "Use the optimize-web-fonts skill on this site."
+Any other client: add an HTTP MCP server at `https://mcp.fontalt.com/mcp`, no key. Without it, `webfont-audit` still
+gives every finding it can make from your files and marks the catalogue checks "not checked".
 
-## Python dependencies (any agent)
+## Requirements
+
+`webfont-audit` needs Node.js 18+ and nothing else: no install step, no dependencies.
+
+`optimize-web-fonts` needs Python and Playwright:
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r skills/optimize-web-fonts/requirements.txt
 playwright install chromium
 ```
 Python 3.10+. The scripts also run by hand without an agent: see the README of this repo.
+
+## Manual install (fallback)
+
+Copy or symlink the skill folder where your agent looks for skills. Replace `<skill>` with `webfont-audit` or
+`optimize-web-fonts`.
+
+### Claude Code
+```bash
+git clone https://github.com/ruzicic/font-skills.git
+# for one project:
+mkdir -p .claude/skills && cp -r font-skills/skills/<skill> .claude/skills/
+# or for every project:
+mkdir -p ~/.claude/skills && cp -r font-skills/skills/<skill> ~/.claude/skills/
+```
+Then ask the agent to use the skill, for example "Audit this project's web fonts" or "Optimize this site's web fonts".
+
+### Cursor
+Cursor loads skills from `.agents/skills/` or `.cursor/skills/` (project) and `~/.agents/skills/` or `~/.cursor/skills/`
+(global) - [docs](https://cursor.com/docs/skills). It also reads the Claude and Codex directories.
+```bash
+mkdir -p .agents/skills && cp -r font-skills/skills/<skill> .agents/skills/      # project, shared with Codex
+# or global: mkdir -p ~/.cursor/skills && cp -r font-skills/skills/<skill> ~/.cursor/skills/
+```
+Then ask the agent to use the skill.
+
+### Codex CLI
+Codex scans `.agents/skills/` from the working directory up to the repo root, plus `~/.agents/skills/` for you personally
+([docs](https://learn.chatgpt.com/docs/build-skills.md)). Older releases used `~/.codex/skills`, which is still read.
+```bash
+mkdir -p .agents/skills && cp -r font-skills/skills/<skill> .agents/skills/      # project
+# or personal: mkdir -p ~/.agents/skills && cp -r font-skills/skills/<skill> ~/.agents/skills/
+```
+Then ask: "Use the <skill> skill on this site."
