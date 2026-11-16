@@ -22,7 +22,7 @@
       ],
       "family": "JetBrains Mono Variable",
       "features_used": [],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/jetbrains-mono-latin-ext-wght-normal.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/jetbrains-mono-latin-ext-wght-normal.woff2",
       "pages": {
         "/code.html": [
           321,
@@ -118,7 +118,7 @@
       "features_used": [
         "zero"
       ],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/jetbrains-mono-latin-wght-normal.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/jetbrains-mono-latin-wght-normal.woff2",
       "pages": {
         "/": [
           32,
@@ -242,7 +242,7 @@
       ],
       "family": "Source Serif 4 Variable",
       "features_used": [],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-italic.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-italic.woff2",
       "pages": {
         "/": [
           321
@@ -294,7 +294,7 @@
       ],
       "family": "Source Serif 4 Variable",
       "features_used": [],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-normal.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/source-serif-4-latin-ext-opsz-normal.woff2",
       "pages": {
         "/": [
           321,
@@ -383,7 +383,7 @@
       ],
       "family": "Source Serif 4 Variable",
       "features_used": [],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-italic.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-italic.woff2",
       "pages": {
         "/": [
           32,
@@ -588,7 +588,7 @@
         "smcp",
         "tnum"
       ],
-      "local_file": "./font-skills/work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-normal.woff2",
+      "local_file": "work/plain-html/run3/saved-fonts/source-serif-4-latin-opsz-normal.woff2",
       "pages": {
         "/": [
           32,

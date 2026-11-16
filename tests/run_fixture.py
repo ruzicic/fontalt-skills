@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """End-to-end check of the optimize-web-fonts scripts on one fixture site.
 
-  ./fs-venv/bin/python tests/run_fixture.py plain-html --runs 3
+  python3 tests/run_fixture.py plain-html --runs 3
 
 Each run, from scratch in <work>/<fixture>/runN:
   build baseline -> measure -> scan usage -> optimize (twice: output must be byte-identical) -> wire into a copy
@@ -31,8 +31,11 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "skills" / "optimize-web-fonts" / "scripts"
-NODE_BIN = os.environ.get("FONT_SKILLS_NODE_BIN", "./tools/node-v22.23.4-linux-x64/bin")
-ENV = {**os.environ, "PATH": f"{NODE_BIN}:{os.environ['PATH']}", "NEXT_TELEMETRY_DISABLED": "1", "ASTRO_TELEMETRY_DISABLED": "1", "CI": "1"}
+NODE_BIN = os.environ.get("FONT_SKILLS_NODE_BIN", "")
+_path = os.environ["PATH"]
+if NODE_BIN:
+    _path = f"{NODE_BIN}:{_path}"
+ENV = {**os.environ, "PATH": _path, "NEXT_TELEMETRY_DISABLED": "1", "ASTRO_TELEMETRY_DISABLED": "1", "CI": "1"}
 IGNORE = shutil.ignore_patterns("node_modules", ".next", "dist", ".astro", "out", "__pycache__")
 
 
@@ -218,7 +221,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("fixture")
     ap.add_argument("--runs", type=int, default=3)
-    ap.add_argument("--work", default="./fs-work")
+    ap.add_argument("--work", default=os.environ.get("FONT_SKILLS_WORK", str(ROOT / "work")))
     ap.add_argument("--no-save", action="store_true", help="do not write results/<fixture>.*")
     a = ap.parse_args()
     work = Path(a.work)
