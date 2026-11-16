@@ -24,8 +24,8 @@ from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import (in_ranges, launch_browser, new_context, page_url, parse_unicode_range,  # noqa: E402
-                    serve_dir, settle, write_json)
+from common import (add_allow_remote_argument, in_ranges, launch_browser, new_context, page_url,  # noqa: E402
+                    parse_unicode_range, require_local_url, serve_dir, settle, write_json)
 from fontTools.ttLib import TTFont  # noqa: E402
 
 COLLECT_JS = r"""
@@ -431,9 +431,12 @@ def main(argv=None):
     ap.add_argument("--extra-text", nargs="*", default=[], help="text/markdown/json files whose characters may appear later (CMS, i18n)")
     ap.add_argument("--save-fonts", help="directory to save the font files the pages downloaded (inputs for optimize_fonts.py)")
     ap.add_argument("--out", default="usage.json")
+    add_allow_remote_argument(ap)
     a = ap.parse_args(argv)
     if not (a.base_url or a.dir):
         ap.error("give --base-url or --dir")
+    if a.base_url:
+        a.base_url = require_local_url(a.base_url, allow_remote=a.allow_remote, flag="--base-url")
     extra = "".join(Path(f).read_text(encoding="utf-8", errors="ignore") for f in a.extra_text)
     notes: list[str] = []
     save = Path(a.save_fonts) if a.save_fonts else None
