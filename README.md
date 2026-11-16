@@ -1,4 +1,4 @@
-# font-skills
+# fontalt-skills
 
 An agent skill, `skills/optimize-web-fonts`, that shrinks a site's web font bytes (measure, scan real usage with
 Playwright, subset / split with fontTools, pixel-diff) without changing how anything looks. See
