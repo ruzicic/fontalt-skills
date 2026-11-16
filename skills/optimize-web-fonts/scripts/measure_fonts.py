@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import launch_browser, new_context, page_url, serve_dir, settle, write_json  # noqa: E402
+from common import add_allow_remote_argument, launch_browser, new_context, page_url, require_local_url, serve_dir, settle, write_json  # noqa: E402
 from fontinfo import font_facts  # noqa: E402
 
 
@@ -60,7 +60,10 @@ def main(argv=None):
     ap.add_argument("--paths", nargs="*", default=["/"])
     ap.add_argument("--widths", nargs="*", type=int, default=[390, 1440])
     ap.add_argument("--out")
+    add_allow_remote_argument(ap)
     a = ap.parse_args(argv)
+    if a.base_url:
+        a.base_url = require_local_url(a.base_url, allow_remote=a.allow_remote, flag="--base-url")
 
     result: dict = {"fonts": [font_facts(f) for f in a.files]}
     if a.base_url:
