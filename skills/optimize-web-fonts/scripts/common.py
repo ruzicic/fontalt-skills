@@ -1,14 +1,18 @@
 """Shared helpers for the optimize-web-fonts scripts (stdlib + fonttools + Playwright)."""
 from __future__ import annotations
 
+import argparse
 import contextlib
 import functools
 import http.server
+import ipaddress
 import json
 import os
 import socketserver
+import sys
 import threading
 from pathlib import Path
+from urllib.parse import urlparse
 
 CORE_PUNCT = [0x00A0, 0x2013, 0x2014, 0x2018, 0x2019, 0x201C, 0x201D, 0x2026]
 CORE_BASE = set(range(0x20, 0x7F)) | set(CORE_PUNCT)
@@ -155,6 +159,58 @@ def settle(page, extra_ms=250):
       await document.fonts.ready;
       await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));}""")
     page.wait_for_timeout(extra_ms)
+
+
+def _is_loopback_host(host: str) -> bool:
+    """True for 'localhost', 127.0.0.0/8, or ::1. Does not resolve DNS."""
+    if not host:
+        return False
+    name = host.strip().lower().rstrip(".")
+    if name == "localhost":
+        return True
+    try:
+        return ipaddress.ip_address(name).is_loopback
+    except ValueError:
+        return False
+
+
+def require_local_url(url: str, *, allow_remote: bool = False, flag: str = "URL") -> str:
+    """Allow only loopback hosts or file://, unless allow_remote is True.
+
+    Parses with urllib.parse. Rejects userinfo tricks such as http://localhost@evil.com.
+    Exits with a clear error on anything else.
+    """
+    raw = (url or "").strip()
+    if not raw:
+        sys.exit(f"error: {flag} is empty")
+    if allow_remote:
+        return raw
+    try:
+        parsed = urlparse(raw)
+    except ValueError:
+        sys.exit(f"error: {flag} is not a valid URL: {raw}")
+    scheme = (parsed.scheme or "").lower()
+    if scheme == "file":
+        return raw
+    if parsed.username is not None or parsed.password is not None:
+        sys.exit(
+            f"error: {flag} must be a local URL (localhost, 127.0.0.0/8, ::1, or file://); "
+            f"userinfo is not allowed. Pass --allow-remote to open a non-local URL. Got: {raw}"
+        )
+    if scheme in ("http", "https") and _is_loopback_host(parsed.hostname or ""):
+        return raw
+    sys.exit(
+        f"error: {flag} must be a local URL (localhost, 127.0.0.0/8, ::1, or file://). "
+        f"Pass --allow-remote to open a non-local URL. Got: {raw}"
+    )
+
+
+def add_allow_remote_argument(ap: argparse.ArgumentParser) -> None:
+    ap.add_argument(
+        "--allow-remote",
+        action="store_true",
+        help="allow --base-url / --before-url / --after-url to point at a non-local host",
+    )
 
 
 def page_url(base: str, path: str) -> str:

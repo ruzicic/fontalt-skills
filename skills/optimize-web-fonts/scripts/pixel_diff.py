@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Step 4 - prove nothing changed: Playwright screenshots before/after, pixel diff, and CLS with fonts delayed.
 
-Serves the two built directories on temporary localhost ports (or pass --before-url/--after-url for dev servers),
+Serves the two built directories on temporary localhost ports (or pass --before-url/--after-url for local dev servers),
 screenshots every page at every viewport and colour scheme (animations off, fonts ready, lazy images loaded),
 counts differing pixels, groups them into clusters, and names the element under each cluster so every difference
 can be explained (content change / regression / sub-pixel rounding). Also measures layout shift with every font
@@ -28,7 +28,7 @@ from playwright.sync_api import TimeoutError as PlaywrightTimeout
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import launch_browser, new_context, page_url, serve_dir, settle, write_json  # noqa: E402
+from common import add_allow_remote_argument, launch_browser, new_context, page_url, require_local_url, serve_dir, settle, write_json  # noqa: E402
 
 TOLERANCE_PCT = 0.02
 MAX_DELTA = 16
@@ -108,8 +108,9 @@ def describe_regions(browser, base, path, width, scheme, cluster_list):
         info = page.evaluate("""([x,y])=>{window.scrollTo(0,Math.max(0,y-300));
           const el=document.elementFromPoint(x-scrollX,y-scrollY); if(!el) return null;
           const cs=getComputedStyle(el);
-          return {tag:el.tagName.toLowerCase(), cls:el.className&&el.className.toString().slice(0,60), text:(el.textContent||'').trim().slice(0,80),
-                  font:cs.fontFamily.slice(0,80), weight:cs.fontWeight, style:cs.fontStyle, size:cs.fontSize};}""", [cx, cy])
+          return {tag:el.tagName.toLowerCase(), cls:el.className&&el.className.toString().slice(0,60),
+                  font:cs.fontFamily.slice(0,80), weight:cs.fontWeight, style:cs.fontStyle, size:cs.fontSize,
+                  text_length:(el.textContent||'').trim().length};}""", [cx, cy])
         out.append({**c, "element": info})
     ctx.close()
     return out
@@ -155,7 +156,12 @@ def main(argv=None):
     ap.add_argument("--no-cls", action="store_true")
     ap.add_argument("--cls-delay-ms", type=int, default=1500)
     ap.add_argument("--keep-images", action="store_true", help="always write before/after PNGs (default: only diff images for failures)")
+    add_allow_remote_argument(ap)
     a = ap.parse_args(argv)
+    if a.before_url:
+        a.before_url = require_local_url(a.before_url, allow_remote=a.allow_remote, flag="--before-url")
+    if a.after_url:
+        a.after_url = require_local_url(a.after_url, allow_remote=a.allow_remote, flag="--after-url")
     out = Path(a.out)
     (out / "img").mkdir(parents=True, exist_ok=True)
 
