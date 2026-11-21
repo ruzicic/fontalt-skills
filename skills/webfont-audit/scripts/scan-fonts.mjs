@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Webfont Audit scanner. Usage: node scan-fonts.mjs <dir> [--json]
+// Webfont Audit scanner. Usage: node scan-fonts.mjs <dir> [--json] [--all]
 //
 // Reads the source files of a project and writes a report to stdout. It never opens a
 // network connection, never runs another program and never parses font binaries: font
@@ -38,6 +38,38 @@ export const ICON_FAMILY_MARKERS = [
 export const LICENCE_GUIDE_URL = "https://fontalternatives.com/licenses/?utm_source=webfont-audit&utm_medium=skill";
 
 export const SKIP_DIRS = new Set(["node_modules", ".git", "dist", "build", ".next", "out"]);
+// Folders whose CSS and HTML do not ship with the site: tests, fixtures, examples, docs prototypes and tool caches.
+// Skipped by default (listed in stats.non_shipping_skipped) so test strings and design mock-ups do not bury the real
+// findings; --all scans them too. A docs/ folder that is itself a site (its own package.json or .vitepress) is kept.
+export const NON_SHIPPING_DIRS = new Set([
+	"test",
+	"tests",
+	"__tests__",
+	"__mocks__",
+	"fixtures",
+	"__fixtures__",
+	"e2e",
+	"cypress",
+	"playwright-report",
+	"test-results",
+	"coverage",
+	"examples",
+	"docs",
+	".storybook",
+	"storybook-static",
+	".wrangler",
+	".astro",
+	".svelte-kit",
+	".nuxt",
+	".output",
+	".vercel",
+	".netlify",
+	".turbo",
+	".cache",
+]);
+const DOCS_SITE_MARKERS = ["package.json", ".vitepress"];
+// Test, spec and story files: their font URLs and @font-face strings are test data.
+export const NON_SHIPPING_FILE = /\.(test|spec|stories|story)\.[cm]?[jt]sx?$/i;
 const CSS_EXT = new Set([".css", ".scss", ".less"]);
 const MARKUP_EXT = new Set([".html", ".htm", ".vue", ".svelte", ".astro"]);
 const SCRIPT_EXT = new Set([".js", ".mjs", ".cjs", ".jsx", ".ts", ".mts", ".cts", ".tsx"]);
@@ -278,7 +310,11 @@ function familyFromFontPath(p) {
 // ---------------------------------------------------------------------------------------------
 // File walk
 
-function walk(root) {
+function isDocsSite(absDir) {
+	return DOCS_SITE_MARKERS.some((m) => fs.existsSync(path.join(absDir, m)));
+}
+
+function walk(root, { all = false } = {}) {
 	const realRoot = fs.realpathSync(root);
 	const files = [];
 	const fontFiles = [];
@@ -291,6 +327,8 @@ function walk(root) {
 		skipped_too_large: [],
 		symlinks_skipped: 0,
 		font_files_found: 0,
+		non_shipping_skipped: [],
+		files_skipped_non_shipping: 0,
 	};
 	let stop = false;
 
@@ -341,6 +379,10 @@ function walk(root) {
 			}
 			if (isDir) {
 				if (SKIP_DIRS.has(name)) continue;
+				if (!all && NON_SHIPPING_DIRS.has(name) && !(name === "docs" && isDocsSite(abs))) {
+					stats.non_shipping_skipped.push(rel);
+					continue;
+				}
 				visit(rel);
 				continue;
 			}
@@ -353,6 +395,10 @@ function walk(root) {
 			const readable =
 				CSS_EXT.has(ext) || MARKUP_EXT.has(ext) || SCRIPT_EXT.has(ext) || name === "package.json";
 			if (!readable) continue;
+			if (!all && NON_SHIPPING_FILE.test(name)) {
+				stats.files_skipped_non_shipping++;
+				continue;
+			}
 			if (files.length >= MAX_FILES) {
 				stats.file_limit_reached = true;
 				stop = true;
@@ -840,7 +886,7 @@ function analyseGoogleUrls(state, { rel, text, kind, lineOf }) {
 				family: null,
 				file: rel,
 				line,
-				detail: `This @import of Google Fonts CSS (${names.join(", ")}) blocks rendering: the browser finds it only after the stylesheet that imports it has downloaded, then waits for another origin. Fix: replace it with a <link rel="stylesheet"> in the HTML head after a preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, or self-host the fonts.`,
+				detail: `This @import of Google Fonts CSS${names.length ? ` (${names.join(", ")})` : ""} blocks rendering: the browser finds it only after the stylesheet that imports it has downloaded, then waits for another origin. Fix: replace it with a <link rel="stylesheet"> in the HTML head after a preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, or self-host the fonts.`,
 			});
 		} else if (tag) {
 			const { blocking } = stylesheetLinkBlocks(tag);
@@ -850,7 +896,7 @@ function analyseGoogleUrls(state, { rel, text, kind, lineOf }) {
 					family: null,
 					file: rel,
 					line,
-					detail: `This <link rel="stylesheet"> loads Google Fonts CSS (${names.join(", ")}) from another origin and blocks rendering until it arrives. Fix: preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, then load the stylesheet without blocking (media="print" with onload="this.media='all'", plus a <noscript> copy), or self-host the fonts.`,
+					detail: `This <link rel="stylesheet"> loads Google Fonts CSS${names.length ? ` (${names.join(", ")})` : ""} from another origin and blocks rendering until it arrives. Fix: preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, then load the stylesheet without blocking (media="print" with onload="this.media='all'", plus a <noscript> copy), or self-host the fonts.`,
 				});
 			}
 		}
@@ -1062,7 +1108,7 @@ function displayFinding(id, family, where, observation, icon, fix) {
 
 function googleDisplayFinding(g) {
 	const families = g.families.join(", ");
-	const icon = g.families.every(isIconFamily);
+	const icon = g.families.length > 0 && g.families.every(isIconFamily);
 	const d = g.display;
 	if (d === null || d === "auto") {
 		let obs;
@@ -1070,20 +1116,20 @@ function googleDisplayFinding(g) {
 		if (icon) {
 			obs =
 				d === null
-					? `This Google Fonts URL (${families}), which looks like an icon font, has no display parameter, so the browser decides how the icons load.`
-					: `This Google Fonts URL (${families}), which looks like an icon font, sets display=auto, so the browser decides how the icons load.`;
+					? `This Google Fonts URL${families ? ` (${families})` : ""}, which looks like an icon font, has no display parameter, so the browser decides how the icons load.`
+					: `This Google Fonts URL${families ? ` (${families})` : ""}, which looks like an icon font, sets display=auto, so the browser decides how the icons load.`;
 			fix = d === null ? `Fix: add "&display=block" to the URL.` : `Fix: set "display=block" in the URL.`;
 		} else if (d === null) {
-			obs = `This Google Fonts URL (${families}) has no display parameter, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds.`;
+			obs = `This Google Fonts URL${families ? ` (${families})` : ""} has no display parameter, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds.`;
 			fix = `Fix: add "&display=swap" to the URL.`;
 		} else {
-			obs = `This Google Fonts URL (${families}) sets display=auto, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds.`;
+			obs = `This Google Fonts URL${families ? ` (${families})` : ""} sets display=auto, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds.`;
 			fix = `Fix: set "display=swap" in the URL.`;
 		}
 		return displayFinding("missing-font-display", null, g, obs, icon, fix);
 	}
 	if (d === "block" && !icon) {
-		const obs = `This Google Fonts URL (${families}) sets display=block, which can hide the text for up to about 3 seconds while the fonts download.`;
+		const obs = `This Google Fonts URL${families ? ` (${families})` : ""} sets display=block, which can hide the text for up to about 3 seconds while the fonts download.`;
 		return displayFinding("font-display-block", null, g, obs, false, `Fix: set "display=swap" in the URL.`);
 	}
 	return null;
@@ -1218,9 +1264,9 @@ function resolveUsages(state) {
 	}
 }
 
-export function scan(rootDir) {
+export function scan(rootDir, { all = false } = {}) {
 	const root = path.resolve(rootDir);
-	const { files, fontFiles, stats } = walk(root);
+	const { files, fontFiles, stats } = walk(root, { all });
 	const fontFileSet = new Set(fontFiles);
 	const state = createState();
 	let binary = 0;
@@ -1283,6 +1329,7 @@ export function scan(rootDir) {
 		stats: {
 			...stats,
 			skipped_too_large: [...stats.skipped_too_large].sort(cmp),
+			non_shipping_skipped: [...stats.non_shipping_skipped].sort(cmp),
 			files_skipped_binary: binary,
 			weights_used_unattributed: sortWeights(state.unattributedWeights),
 			families: families.length,
@@ -1455,6 +1502,10 @@ export function formatText(r) {
 		lines.push(`Stopped at the ${r.stats.file_limit}-file limit: files after that were not scanned.`);
 	if (r.stats.files_skipped_too_large)
 		lines.push(`Skipped ${r.stats.files_skipped_too_large} files over ${r.stats.max_file_bytes} bytes.`);
+	if (r.stats.non_shipping_skipped.length || r.stats.files_skipped_non_shipping)
+		lines.push(
+			`Not scanned (tests, fixtures, docs, caches; --all includes them): ${r.stats.non_shipping_skipped.join(", ") || "-"}; ${r.stats.files_skipped_non_shipping} test/spec/story files.`,
+		);
 	lines.push("");
 	lines.push("Families:");
 	for (const f of r.families) {
@@ -1482,14 +1533,14 @@ function isMain() {
 if (isMain()) {
 	const args = process.argv.slice(2);
 	if (args.includes("--help") || args.includes("-h")) {
-		process.stdout.write("Usage: node scan-fonts.mjs <project dir> [--json]\n");
+		process.stdout.write("Usage: node scan-fonts.mjs <project dir> [--json] [--all]\n");
 		process.exit(0);
 	}
 	const dir = args.find((a) => !a.startsWith("--"));
 	if (!dir || !fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) {
-		process.stderr.write("Usage: node scan-fonts.mjs <project dir> [--json]  (the directory must exist)\n");
+		process.stderr.write("Usage: node scan-fonts.mjs <project dir> [--json] [--all]  (the directory must exist)\n");
 		process.exit(2);
 	}
-	const result = scan(dir);
+	const result = scan(dir, { all: args.includes("--all") });
 	process.stdout.write(args.includes("--json") ? `${JSON.stringify(result, null, 2)}\n` : formatText(result));
 }

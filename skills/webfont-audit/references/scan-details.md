@@ -10,6 +10,13 @@ it opens no connection, runs no other program and never parses a font file (font
   `.eot` files without opening them.
 - **Skips:** `node_modules`, `.git`, `dist`, `build`, `.next`, `out`, anything named `.env*`, files over 1 MB (listed
   in `stats.skipped_too_large`), symlinks that leave the root, and symlinked directories (not followed).
+- **Not shipped, skipped by default:** folders named `test`, `tests`, `__tests__`, `__mocks__`, `fixtures`,
+  `__fixtures__`, `e2e`, `cypress`, `playwright-report`, `test-results`, `coverage`, `examples`, `docs`, `.storybook`,
+  `storybook-static` and the tool caches `.wrangler`, `.astro`, `.svelte-kit`, `.nuxt`, `.output`, `.vercel`,
+  `.netlify`, `.turbo`, `.cache` (listed in `stats.non_shipping_skipped`), and `*.test.*`, `*.spec.*`, `*.stories.*`
+  files (counted in `stats.files_skipped_non_shipping`). Their font URLs and `@font-face` rules are test data or
+  mock-ups. A `docs/` folder with its own `package.json` or `.vitepress` is a docs site and is scanned. `--all` scans
+  everything.
 - **Limit:** it reads at most 5,000 files, in sorted path order. At the 5,001st it stops and sets
   `stats.file_limit_reached: true`; the report must say the scan was partial.
 - **Detects:** `@font-face` blocks; `font-family`, `font-weight`, `font-style`, `font-variation-settings` and the

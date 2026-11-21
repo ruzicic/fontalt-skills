@@ -32,6 +32,8 @@ node <skill dir>/scripts/scan-fonts.mjs <project dir> --json
 Read `stats` first. If `file_limit_reached` is true the scan stopped at 5,000 files: say so in the report. Files over
 1 MB are skipped and listed in `stats.skipped_too_large`. Cite the `skill_version` the script printed. Field meanings
 and every finding id: `references/scan-details.md`.
+Tests, fixtures, docs mock-ups and caches are skipped (`stats.non_shipping_skipped`): name them in one line,
+and rerun with `--all` only if the user asks.
 
 ## 2. Check the catalogue
 

@@ -255,6 +255,56 @@ test("skips node_modules, .git, build output, .env* and symlinks that leave the 
 	fs.rmSync(outside, { recursive: true, force: true });
 });
 
+test("skips tests, fixtures, docs prototypes and caches by default; --all scans them", () => {
+	const dir = tmpDir("nonship");
+	const face = (n) => `@font-face { font-family: "${n}"; src: url("x.woff2"); }\n`;
+	const put = (rel, body) => {
+		fs.mkdirSync(path.dirname(path.join(dir, rel)), { recursive: true });
+		fs.writeFileSync(path.join(dir, rel), body);
+	};
+	put("src/app.css", face("App"));
+	put("tests/a.css", face("InTests"));
+	put("src/__tests__/b.css", face("InUnderTests"));
+	put("fixtures/site/c.css", face("InFixtures"));
+	put("docs/board.html", `<style>${face("InDocs")}</style>`);
+	put(".wrangler/tmp/index.js", `const css = '${face("InCache").trim()}';`);
+	put("src/fonts.test.ts", `const css = '${face("InTestFile").trim()}';`);
+	put("src/Button.stories.tsx", `const css = '${face("InStory").trim()}';`);
+	put("site/docs/.vitepress/x.css", face("Nested"));
+	const r = scan(dir);
+	// site/docs has a .vitepress folder, so it is a docs site and stays in the scan.
+	assert.deepEqual(r.families.map((f) => f.family), ["App", "Nested"]);
+	assert.deepEqual(r.stats.non_shipping_skipped, [".wrangler", "docs", "fixtures", "src/__tests__", "tests"]);
+	assert.equal(r.stats.files_skipped_non_shipping, 2);
+	const all = scan(dir, { all: true });
+	assert.equal(all.families.length, 9);
+	assert.deepEqual(all.stats.non_shipping_skipped, []);
+	assert.equal(all.stats.files_skipped_non_shipping, 0);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("a Google Fonts URL with no family (built at run time) gets no empty family list", () => {
+	const dir = tmpDir("nofamily");
+	fs.writeFileSync(path.join(dir, "index.html"), '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap">\n');
+	const r = scan(dir);
+	assert.deepEqual(ids(r.findings), ["render-blocking-google-css"]);
+	for (const f of r.findings) assert.ok(!f.detail.includes("()"), f.detail);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("a docs/ folder that is its own site is scanned", () => {
+	for (const marker of ["package.json", ".vitepress"]) {
+		const dir = tmpDir(`docsite-${marker}`);
+		fs.mkdirSync(path.join(dir, "docs", marker === ".vitepress" ? ".vitepress" : ""), { recursive: true });
+		if (marker === "package.json") fs.writeFileSync(path.join(dir, "docs", "package.json"), "{}");
+		fs.writeFileSync(path.join(dir, "docs", "site.css"), '@font-face { font-family: "DocsSite"; src: url("x.woff2"); }\n');
+		const r = scan(dir);
+		assert.deepEqual(r.families.map((f) => f.family), ["DocsSite"], marker);
+		assert.deepEqual(r.stats.non_shipping_skipped, [], marker);
+		fs.rmSync(dir, { recursive: true, force: true });
+	}
+});
+
 test("CLI: --json and plain output, first line carries the skill version", () => {
 	const dir = path.join(FIXTURES, "css-fontface");
 	const json = JSON.parse(execFileSync(process.execPath, [SCRIPT, dir, "--json"], { encoding: "utf8" }));
