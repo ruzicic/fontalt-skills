@@ -70,8 +70,7 @@ const DOCS_SITE_MARKERS = [
 	"package.json",
 	".vitepress",
 	"_config.yml",
-	"index.html",
-	"index.md",
+	".nojekyll",
 	"conf.py",
 	"mint.json",
 	"docs.json",
@@ -80,8 +79,9 @@ const DOCS_SITE_MARKERS = [
 	"docusaurus.config.mjs",
 ];
 const DOCS_SITE_SIBLINGS = ["mkdocs.yml", "mkdocs.yaml"];
-// Test, spec, story and Cypress files (any extension): their font URLs and @font-face strings are test data.
-export const NON_SHIPPING_FILE = /\.(test|spec|stories|story|cy)\.[a-z0-9]+$/i;
+// Test, spec and story files (any extension) and Cypress specs: their font URLs and @font-face strings are test data.
+// ".cy." only before a script extension: elsewhere it is the Welsh locale code (about.cy.html).
+export const NON_SHIPPING_FILE = /\.(test|spec|stories|story)\.[a-z0-9]+$|\.cy\.[cm]?[jt]sx?$/i;
 // At most this many skipped folders are listed; the rest are counted in stats.non_shipping_skipped_more.
 export const NON_SHIPPING_LIST_MAX = 20;
 const CSS_EXT = new Set([".css", ".scss", ".less"]);

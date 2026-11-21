@@ -18,9 +18,9 @@ it opens no connection, runs no other program and never parses a font file (font
   - only at the scan root or a workspace root (`apps/<name>`, `packages/<name>`): `test`, `tests`, `e2e`, `examples`,
     `docs`. Deeper down these are usually routes or components (`app/docs`, `src/routes/docs`) and are scanned. A
     `docs/` that a site generator publishes is scanned too: it holds `package.json`, `.vitepress`, `_config.yml`,
-    `index.html`, `index.md`, `conf.py`, `mint.json`, `docs.json` or `docusaurus.config.*`, or `mkdocs.yml` sits next
+    `.nojekyll`, `conf.py`, `mint.json`, `docs.json` or `docusaurus.config.*`, or `mkdocs.yml` sits next
     to it;
-  - files named `*.test.*`, `*.spec.*`, `*.stories.*`, `*.story.*` or `*.cy.*` (counted in
+  - files named `*.test.*`, `*.spec.*`, `*.stories.*`, `*.story.*`, or Cypress `*.cy.js`/`*.cy.ts` (not `about.cy.html`, a Welsh page) (counted in
     `stats.files_skipped_non_shipping`).
 
   Their font URLs and `@font-face` rules are test data or mock-ups. Font files inside skipped folders are not listed

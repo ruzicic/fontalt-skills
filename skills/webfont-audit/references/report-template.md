@@ -6,7 +6,7 @@ Write the report in this order. Keep it short: one line per finding unless the f
 ## Web font audit: <project name or "this project">
 
 Scanned <files_scanned> files. <"The scan stopped at the 5,000-file limit; files after that were not checked." if
-file_limit_reached> <"Skipped <n> files over 1 MB." if any> <"Not scanned (not shipped): <non_shipping_skipped> (+<non_shipping_skipped_more> more), <files_skipped_non_shipping> test/story files." if any>
+file_limit_reached> <"Skipped <n> files over 1 MB." if any> <"Not scanned (not shipped): <non_shipping_skipped><" (+<non_shipping_skipped_more> more)" if > 0>, <files_skipped_non_shipping> test/story files." if any>
 
 ### Fonts found
 

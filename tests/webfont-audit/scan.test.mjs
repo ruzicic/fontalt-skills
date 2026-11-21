@@ -335,7 +335,7 @@ test("docs/, examples/, test(s)/ and e2e/ deeper than the root are routes or com
 
 test("a root docs/ published by GitHub Pages, Jekyll, MkDocs or Docusaurus is scanned", () => {
 	const cases = {
-		"gh-pages": { "docs/index.html": `<style>${face("Pages")}</style>` },
+		"gh-pages": { "docs/.nojekyll": "", "docs/index.html": `<style>${face("Pages")}</style>` },
 		jekyll: { "docs/_config.yml": "title: x\n", "docs/assets/site.css": face("Jekyll") },
 		mkdocs: { "mkdocs.yml": "site_name: x\n", "docs/stylesheets/extra.css": face("MkDocs") },
 		docusaurus: { "docs/docusaurus.config.js": "export default {};\n", "docs/src/custom.css": face("Docusaurus") },
@@ -349,6 +349,14 @@ test("a root docs/ published by GitHub Pages, Jekyll, MkDocs or Docusaurus is sc
 	}
 });
 
+test("a plain docs/ with only an index.md or index.html table of contents is still skipped", () => {
+	const dir = project("docs-index", { "docs/index.md": "# Docs\n", "docs/index.html": "<p>toc</p>\n", "docs/board.html": `<style>${face("Board")}</style>` });
+	const r = scan(dir);
+	assert.deepEqual(r.families, []);
+	assert.deepEqual(r.stats.non_shipping_skipped, ["docs"]);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
 test("story, Cypress and test files of any extension are skipped", () => {
 	const dir = project("nonship-files", {
 		"src/app.css": face("App"),
@@ -356,9 +364,10 @@ test("story, Cypress and test files of any extension are skipped", () => {
 		"src/Card.stories.vue": `<style>${face("VueStory")}</style>`,
 		"src/login.cy.ts": `const css = '${face("Cypress").trim()}';`,
 		"src/page.test.html": `<style>${face("TestHtml")}</style>`,
+		"src/about.cy.html": `<style>${face("Welsh")}</style>`,
 	});
 	const r = scan(dir);
-	assert.deepEqual(r.families.map((f) => f.family), ["App"]);
+	assert.deepEqual(r.families.map((f) => f.family), ["App", "Welsh"]);
 	assert.equal(r.stats.files_skipped_non_shipping, 4);
 	fs.rmSync(dir, { recursive: true, force: true });
 });
