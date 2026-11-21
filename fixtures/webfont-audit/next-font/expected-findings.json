@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "id": "font-display-block",
+      "family": "Roboto Mono",
+      "file": "app/layout.js",
+      "line": 8,
+      "detail": "next/font loads \"Roboto Mono\" with display: \"block\", which can hide the text for up to about 3 seconds while the font downloads. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: remove the display option (next/font defaults to \"swap\") or set display: \"swap\"."
+    },
+    {
+      "id": "nextfont-subset-mismatch",
+      "family": "Roboto Mono",
+      "file": "app/layout.js",
+      "line": 8,
+      "detail": "next/font/google preloads \"Roboto Mono\" for latin only, while other next/font calls in this project also preload latin-ext. Text in those subsets gets a \"Roboto Mono\" file that is not preloaded and can swap in late. Fix: give every next/font call the subsets your text uses."
+    },
+    {
+      "id": "nextfont-subset-mismatch",
+      "family": "Playfair Display",
+      "file": "app/layout.js",
+      "line": 15,
+      "detail": "next/font/google loads \"Playfair Display\" with preload on (the default) but no subsets, so Next.js cannot tell which files to preload and warns or fails the build. Fix: add the subsets your text uses, for example subsets: [\"latin\"], or set preload: false."
+    },
+    {
+      "id": "unused-face-weight",
+      "family": "Playfair Display",
+      "file": "app/layout.js",
+      "line": 15,
+      "detail": "\"Playfair Display\" declares weight 800 here (next/font weight), but nothing in the scanned files sets font-weight 800 where this family could apply. Fix: remove this weight, unless something the scan cannot see applies it (styles set by scripts, CMS content)."
+    }
+  ]
+}

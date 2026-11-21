@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "disclaimer": "This is a summary of publicly documented font-licence terms and of the weights, axes and italics in the FontAlternatives catalogue. It is not legal advice. Read the official licence and, for a commercial or redistribution decision, take advice for your own use case.",
+  "source": "FontAlternatives catalogue",
+  "data_updated_at": "2026-11-15T14:23:45+01:00",
+  "source_commit": "a3d997d2c73ae547cdf0466fa127de3d2d824907",
+  "catalogue_version": "3f9c2a7d41b0",
+  "results": [
+    {
+      "query": "Acme Corp Sans",
+      "status": "not_in_catalogue",
+      "candidates": []
+    },
+    {
+      "query": "Helvetica Neue",
+      "status": "found",
+      "font": {
+        "slug": "neue-helvetica",
+        "name": "Neue Helvetica",
+        "kind": "premium",
+        "license_id": null,
+        "weights": "unknown",
+        "italics": "unknown",
+        "variable_font": false,
+        "variable_axes": "unknown",
+        "page_url": "https://fontalternatives.com/alternatives/neue-helvetica/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "proxima-nova",
+      "status": "found",
+      "font": {
+        "slug": "proxima-nova",
+        "name": "Proxima Nova",
+        "kind": "premium",
+        "license_id": null,
+        "weights": "unknown",
+        "italics": "unknown",
+        "variable_font": false,
+        "variable_axes": "unknown",
+        "page_url": "https://fontalternatives.com/alternatives/proxima-nova/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "sans-serif",
+      "status": "generic"
+    }
+  ]
+}

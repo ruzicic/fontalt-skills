@@ -1,0 +1,60 @@
+{
+  "findings": [
+    {
+      "id": "axis-not-available",
+      "family": "Inter",
+      "file": "about.html",
+      "line": 7,
+      "detail": "\"Inter\" sets the \"slnt\" axis, but our data for Inter lists the axes wght, opsz. The browser ignores an axis the font does not have."
+    },
+    {
+      "id": "licence-flags",
+      "family": "Inter",
+      "file": "about.html",
+      "line": 7,
+      "detail": "\"Inter\": the licence on record for Inter is OFL-1.1. Stored flags: commercial use yes, modification yes, redistribution yes, attribution required no, copyleft yes. Official licence: https://scripts.sil.org/OFL"
+    },
+    {
+      "id": "licence-flags",
+      "family": "Lora",
+      "file": "about.html",
+      "line": 7,
+      "detail": "\"Lora\": the licence on record for Lora is OFL-1.1. Stored flags: commercial use yes, modification yes, redistribution yes, attribution required no, copyleft yes. Official licence: https://scripts.sil.org/OFL"
+    },
+    {
+      "id": "italic-not-available",
+      "family": "Bebas Neue",
+      "file": "index.html",
+      "line": 9,
+      "detail": "\"Bebas Neue\" is used in italic, but our data for Bebas Neue has no italic. The browser will synthesize a slanted copy of the upright face."
+    },
+    {
+      "id": "licence-flags",
+      "family": "Bebas Neue",
+      "file": "index.html",
+      "line": 9,
+      "detail": "\"Bebas Neue\": the licence on record for Bebas Neue is OFL-1.1. Stored flags: commercial use yes, modification yes, redistribution yes, attribution required no, copyleft yes. Official licence: https://scripts.sil.org/OFL"
+    },
+    {
+      "id": "weight-not-available",
+      "family": "Bebas Neue",
+      "file": "index.html",
+      "line": 9,
+      "detail": "\"Bebas Neue\" is declared or used at weight 700, but our data for Bebas Neue lists weights 400. At weight 700 the browser will substitute the nearest weight or synthesize it."
+    },
+    {
+      "id": "not-in-catalogue",
+      "family": "Material Symbols Outlined",
+      "file": "index.html",
+      "line": 11,
+      "detail": "\"Material Symbols Outlined\" is not in our data, so its weights, italics, axes and licence were not checked. That is not a problem in itself."
+    },
+    {
+      "id": "licence-flags",
+      "family": "JetBrains Mono",
+      "file": "styles.css",
+      "line": 2,
+      "detail": "\"JetBrains Mono\": the licence on record for JetBrains Mono is OFL-1.1. Stored flags: commercial use yes, modification yes, redistribution yes, attribution required no, copyleft yes. Official licence: https://scripts.sil.org/OFL"
+    }
+  ]
+}

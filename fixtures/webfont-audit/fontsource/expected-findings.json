@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "id": "unused-face-weight",
+      "family": "Inter",
+      "file": "src/main.js",
+      "line": 4,
+      "detail": "\"Inter\" declares weight 900 here (Fontsource import), but nothing in the scanned files sets font-weight 900 where this family could apply. Fix: remove this weight, unless something the scan cannot see applies it (styles set by scripts, CMS content)."
+    }
+  ]
+}

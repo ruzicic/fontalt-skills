@@ -1,0 +1,128 @@
+{
+  "status": "ok",
+  "disclaimer": "This is a summary of publicly documented font-licence terms and of the weights, axes and italics in the FontAlternatives catalogue. It is not legal advice. Read the official licence and, for a commercial or redistribution decision, take advice for your own use case.",
+  "source": "FontAlternatives catalogue",
+  "data_updated_at": "2026-11-15T14:23:45+01:00",
+  "source_commit": "a3d997d2c73ae547cdf0466fa127de3d2d824907",
+  "catalogue_version": "3f9c2a7d41b0",
+  "results": [
+    {
+      "query": "Bebas Neue",
+      "status": "found",
+      "font": {
+        "slug": "bebas-neue",
+        "name": "Bebas Neue",
+        "kind": "free",
+        "license_id": "OFL-1.1",
+        "weights": [
+          400
+        ],
+        "italics": false,
+        "variable_font": false,
+        "variable_axes": [],
+        "page_url": "https://fontalternatives.com/fonts/bebas-neue/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "Inter",
+      "status": "found",
+      "font": {
+        "slug": "inter",
+        "name": "Inter",
+        "kind": "free",
+        "license_id": "OFL-1.1",
+        "weights": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900
+        ],
+        "italics": true,
+        "variable_font": true,
+        "variable_axes": [
+          {
+            "axis": "wght",
+            "min": 100,
+            "max": 900,
+            "default": 400
+          },
+          {
+            "axis": "opsz",
+            "min": 14,
+            "max": 32,
+            "default": 14
+          }
+        ],
+        "page_url": "https://fontalternatives.com/fonts/inter/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "JetBrains Mono",
+      "status": "found",
+      "font": {
+        "slug": "jetbrains-mono",
+        "name": "JetBrains Mono",
+        "kind": "free",
+        "license_id": "OFL-1.1",
+        "weights": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "italics": true,
+        "variable_font": true,
+        "variable_axes": [
+          {
+            "axis": "wght",
+            "min": 100,
+            "max": 800,
+            "default": 400
+          }
+        ],
+        "page_url": "https://fontalternatives.com/fonts/jetbrains-mono/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "Lora",
+      "status": "found",
+      "font": {
+        "slug": "lora",
+        "name": "Lora",
+        "kind": "free",
+        "license_id": "OFL-1.1",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "italics": true,
+        "variable_font": true,
+        "variable_axes": [
+          {
+            "axis": "wght",
+            "min": 400,
+            "max": 700,
+            "default": 400
+          }
+        ],
+        "page_url": "https://fontalternatives.com/fonts/lora/?utm_source=webfont-audit&utm_medium=mcp"
+      }
+    },
+    {
+      "query": "Material Symbols Outlined",
+      "status": "not_in_catalogue",
+      "candidates": []
+    }
+  ]
+}

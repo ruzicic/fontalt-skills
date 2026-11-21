@@ -1,0 +1,46 @@
+{
+  "findings": [
+    {
+      "id": "missing-font-display",
+      "family": null,
+      "file": "about.html",
+      "line": 7,
+      "detail": "This Google Fonts URL (Lora, Inter) has no display parameter, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: add \"&display=swap\" to the URL."
+    },
+    {
+      "id": "render-blocking-google-css",
+      "family": null,
+      "file": "about.html",
+      "line": 7,
+      "detail": "This <link rel=\"stylesheet\"> loads Google Fonts CSS (Lora, Inter) from another origin and blocks rendering until it arrives. Fix: preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, then load the stylesheet without blocking (media=\"print\" with onload=\"this.media='all'\", plus a <noscript> copy), or self-host the fonts."
+    },
+    {
+      "id": "render-blocking-google-css",
+      "family": null,
+      "file": "index.html",
+      "line": 9,
+      "detail": "This <link rel=\"stylesheet\"> loads Google Fonts CSS (Inter, Bebas Neue) from another origin and blocks rendering until it arrives. Fix: preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, then load the stylesheet without blocking (media=\"print\" with onload=\"this.media='all'\", plus a <noscript> copy), or self-host the fonts."
+    },
+    {
+      "id": "unused-face-weight",
+      "family": "Inter",
+      "file": "index.html",
+      "line": 9,
+      "detail": "\"Inter\" declares weight 600 here (Google Fonts URL), but nothing in the scanned files sets font-weight 600 where this family could apply. Fix: remove this weight, unless something the scan cannot see applies it (styles set by scripts, CMS content)."
+    },
+    {
+      "id": "missing-font-display",
+      "family": null,
+      "file": "styles.css",
+      "line": 2,
+      "detail": "This Google Fonts URL (JetBrains Mono) has no display parameter, so the rules it returns leave font-display to the browser, which can hide the text for up to about 3 seconds. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: add \"&display=swap\" to the URL."
+    },
+    {
+      "id": "render-blocking-google-css",
+      "family": null,
+      "file": "styles.css",
+      "line": 2,
+      "detail": "This @import of Google Fonts CSS (JetBrains Mono) blocks rendering: the browser finds it only after the stylesheet that imports it has downloaded, then waits for another origin. Fix: replace it with a <link rel=\"stylesheet\"> in the HTML head after a preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, or self-host the fonts."
+    }
+  ]
+}

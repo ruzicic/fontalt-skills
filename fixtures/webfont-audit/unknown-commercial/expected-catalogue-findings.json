@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "id": "not-in-catalogue",
+      "family": "Acme Corp Sans",
+      "file": "css/fonts.css",
+      "line": 2,
+      "detail": "\"Acme Corp Sans\" is not in our data, so its weights, italics, axes and licence were not checked. That is not a problem in itself."
+    },
+    {
+      "id": "licence-flags",
+      "family": "Helvetica Neue",
+      "file": "css/fonts.css",
+      "line": 21,
+      "detail": "\"Helvetica Neue\" is a premium font in our catalogue (Neue Helvetica). Our data holds no licence terms for it; its licence comes from the foundry or vendor you got it from. Catalogue page: https://fontalternatives.com/alternatives/neue-helvetica/?utm_source=webfont-audit&utm_medium=mcp"
+    },
+    {
+      "id": "licence-flags",
+      "family": "proxima-nova",
+      "file": "css/fonts.css",
+      "line": 25,
+      "detail": "\"proxima-nova\" is a premium font in our catalogue (Proxima Nova). Our data holds no licence terms for it; its licence comes from the foundry or vendor you got it from. Catalogue page: https://fontalternatives.com/alternatives/proxima-nova/?utm_source=webfont-audit&utm_medium=mcp"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+/* Google Fonts by @import (render-blocking) plus Fontshare: two origins (mixed-cdn) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;800&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
