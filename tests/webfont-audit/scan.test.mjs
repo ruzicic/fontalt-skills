@@ -15,6 +15,7 @@ import {
 	SCHEMA,
 	catalogueFindings,
 	familiesForCatalogue,
+	formatText,
 	scan,
 } from "../../skills/webfont-audit/scripts/scan-fonts.mjs";
 
@@ -303,6 +304,91 @@ test("a docs/ folder that is its own site is scanned", () => {
 		assert.deepEqual(r.stats.non_shipping_skipped, [], marker);
 		fs.rmSync(dir, { recursive: true, force: true });
 	}
+});
+
+const face = (n) => `@font-face { font-family: "${n}"; src: url("x.woff2"); }\n`;
+function project(name, files) {
+	const dir = tmpDir(name);
+	for (const [rel, body] of Object.entries(files)) {
+		fs.mkdirSync(path.dirname(path.join(dir, rel)), { recursive: true });
+		fs.writeFileSync(path.join(dir, rel), body);
+	}
+	return dir;
+}
+
+test("docs/, examples/, test(s)/ and e2e/ deeper than the root are routes or components and stay scanned", () => {
+	const dir = project("nested-routes", {
+		"app/docs/layout.css": face("NextDocs"),
+		"src/routes/docs/page.css": face("SvelteDocs"),
+		"src/pages/examples/index.astro": `<style>${face("AstroExamples")}</style>`,
+		"src/components/docs/DocsLayout.css": face("ComponentDocs"),
+		"src/routes/test/page.css": face("RouteTest"),
+		"apps/web/tests/x.css": face("WorkspaceTests"),
+		"packages/ui/docs/x.html": `<style>${face("WorkspaceDocs")}</style>`,
+		"Docs/x.css": face("UpperDocs"),
+	});
+	const r = scan(dir);
+	assert.deepEqual(r.families.map((f) => f.family).sort(), ["AstroExamples", "ComponentDocs", "NextDocs", "RouteTest", "SvelteDocs"]);
+	assert.deepEqual(r.stats.non_shipping_skipped, ["Docs", "apps/web/tests", "packages/ui/docs"]);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("a root docs/ published by GitHub Pages, Jekyll, MkDocs or Docusaurus is scanned", () => {
+	const cases = {
+		"gh-pages": { "docs/index.html": `<style>${face("Pages")}</style>` },
+		jekyll: { "docs/_config.yml": "title: x\n", "docs/assets/site.css": face("Jekyll") },
+		mkdocs: { "mkdocs.yml": "site_name: x\n", "docs/stylesheets/extra.css": face("MkDocs") },
+		docusaurus: { "docs/docusaurus.config.js": "export default {};\n", "docs/src/custom.css": face("Docusaurus") },
+	};
+	for (const [name, files] of Object.entries(cases)) {
+		const dir = project(`docsite-${name}`, files);
+		const r = scan(dir);
+		assert.equal(r.families.length, 1, name);
+		assert.deepEqual(r.stats.non_shipping_skipped, [], name);
+		fs.rmSync(dir, { recursive: true, force: true });
+	}
+});
+
+test("story, Cypress and test files of any extension are skipped", () => {
+	const dir = project("nonship-files", {
+		"src/app.css": face("App"),
+		"src/Button.stories.svelte": `<style>${face("SvelteStory")}</style>`,
+		"src/Card.stories.vue": `<style>${face("VueStory")}</style>`,
+		"src/login.cy.ts": `const css = '${face("Cypress").trim()}';`,
+		"src/page.test.html": `<style>${face("TestHtml")}</style>`,
+	});
+	const r = scan(dir);
+	assert.deepEqual(r.families.map((f) => f.family), ["App"]);
+	assert.equal(r.stats.files_skipped_non_shipping, 4);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("the skipped-folder list is capped and the rest counted", () => {
+	const files = { "src/app.css": face("App") };
+	for (let i = 0; i < 25; i++) files[`packages/p${String(i).padStart(2, "0")}/__tests__/a.css`] = face(`T${i}`);
+	const dir = project("cap", files);
+	const r = scan(dir);
+	assert.equal(r.stats.non_shipping_skipped.length, 20);
+	assert.equal(r.stats.non_shipping_skipped_more, 5);
+	assert.match(formatText(r), /\(\+5 more\)/);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("CLI --all scans skipped folders; text output names what was not scanned", () => {
+	const dir = project("cli-all", { "src/app.css": face("App"), "tests/t.css": face("InTests") });
+	const text = execFileSync(process.execPath, [SCRIPT, dir], { encoding: "utf8" });
+	assert.match(text, /Not scanned \(tests, fixtures, docs, caches; --all includes them\): tests; 0 test\/spec\/story files\./);
+	const all = JSON.parse(execFileSync(process.execPath, [SCRIPT, dir, "--json", "--all"], { encoding: "utf8" }));
+	assert.deepEqual(all.families.map((f) => f.family).sort(), ["App", "InTests"]);
+	fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test("formatText reads a result saved by an older version (no non-shipping stats)", () => {
+	const r = scan(path.join(FIXTURES, "css-fontface"));
+	delete r.stats.non_shipping_skipped;
+	delete r.stats.non_shipping_skipped_more;
+	delete r.stats.files_skipped_non_shipping;
+	assert.doesNotThrow(() => formatText(r));
 });
 
 test("CLI: --json and plain output, first line carries the skill version", () => {

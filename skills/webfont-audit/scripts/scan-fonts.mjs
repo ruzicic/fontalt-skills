@@ -38,23 +38,18 @@ export const ICON_FAMILY_MARKERS = [
 export const LICENCE_GUIDE_URL = "https://fontalternatives.com/licenses/?utm_source=webfont-audit&utm_medium=skill";
 
 export const SKIP_DIRS = new Set(["node_modules", ".git", "dist", "build", ".next", "out"]);
-// Folders whose CSS and HTML do not ship with the site: tests, fixtures, examples, docs prototypes and tool caches.
-// Skipped by default (listed in stats.non_shipping_skipped) so test strings and design mock-ups do not bury the real
-// findings; --all scans them too. A docs/ folder that is itself a site (its own package.json or .vitepress) is kept.
-export const NON_SHIPPING_DIRS = new Set([
-	"test",
-	"tests",
+// Folders whose CSS and HTML do not ship with the site, skipped by default (listed in stats.non_shipping_skipped) so
+// test strings and design mock-ups do not bury the real findings; --all scans them too. Names compare
+// case-insensitively. These are skipped at any depth:
+export const NON_SHIPPING_DIRS_ANYWHERE = new Set([
 	"__tests__",
 	"__mocks__",
 	"fixtures",
 	"__fixtures__",
-	"e2e",
 	"cypress",
 	"playwright-report",
 	"test-results",
 	"coverage",
-	"examples",
-	"docs",
 	".storybook",
 	"storybook-static",
 	".wrangler",
@@ -67,9 +62,28 @@ export const NON_SHIPPING_DIRS = new Set([
 	".turbo",
 	".cache",
 ]);
-const DOCS_SITE_MARKERS = ["package.json", ".vitepress"];
-// Test, spec and story files: their font URLs and @font-face strings are test data.
-export const NON_SHIPPING_FILE = /\.(test|spec|stories|story)\.[cm]?[jt]sx?$/i;
+// These only at the scan root or a workspace root (apps/<name>, packages/<name>): deeper down they are usually
+// routes or components (app/docs, src/routes/docs, src/pages/examples) and ship.
+export const NON_SHIPPING_DIRS_TOP = new Set(["test", "tests", "e2e", "examples", "docs"]);
+// A docs/ folder that a site generator publishes is kept: its own markers, or mkdocs.yml next to it.
+const DOCS_SITE_MARKERS = [
+	"package.json",
+	".vitepress",
+	"_config.yml",
+	"index.html",
+	"index.md",
+	"conf.py",
+	"mint.json",
+	"docs.json",
+	"docusaurus.config.js",
+	"docusaurus.config.ts",
+	"docusaurus.config.mjs",
+];
+const DOCS_SITE_SIBLINGS = ["mkdocs.yml", "mkdocs.yaml"];
+// Test, spec, story and Cypress files (any extension): their font URLs and @font-face strings are test data.
+export const NON_SHIPPING_FILE = /\.(test|spec|stories|story|cy)\.[a-z0-9]+$/i;
+// At most this many skipped folders are listed; the rest are counted in stats.non_shipping_skipped_more.
+export const NON_SHIPPING_LIST_MAX = 20;
 const CSS_EXT = new Set([".css", ".scss", ".less"]);
 const MARKUP_EXT = new Set([".html", ".htm", ".vue", ".svelte", ".astro"]);
 const SCRIPT_EXT = new Set([".js", ".mjs", ".cjs", ".jsx", ".ts", ".mts", ".cts", ".tsx"]);
@@ -311,7 +325,20 @@ function familyFromFontPath(p) {
 // File walk
 
 function isDocsSite(absDir) {
-	return DOCS_SITE_MARKERS.some((m) => fs.existsSync(path.join(absDir, m)));
+	return (
+		DOCS_SITE_MARKERS.some((m) => fs.existsSync(path.join(absDir, m))) ||
+		DOCS_SITE_SIBLINGS.some((m) => fs.existsSync(path.join(path.dirname(absDir), m)))
+	);
+}
+
+// A folder is at a "top" position when its parent is the scan root or a workspace package (apps/x, packages/x).
+const isTopLevel = (relDir) => relDir === "" || /^(apps|packages)\/[^/]+$/i.test(relDir);
+
+function isNonShippingDir(name, relDir, abs) {
+	const n = name.toLowerCase();
+	if (NON_SHIPPING_DIRS_ANYWHERE.has(n)) return true;
+	if (!NON_SHIPPING_DIRS_TOP.has(n) || !isTopLevel(relDir)) return false;
+	return !(n === "docs" && isDocsSite(abs));
 }
 
 function walk(root, { all = false } = {}) {
@@ -328,6 +355,7 @@ function walk(root, { all = false } = {}) {
 		symlinks_skipped: 0,
 		font_files_found: 0,
 		non_shipping_skipped: [],
+		non_shipping_skipped_more: 0,
 		files_skipped_non_shipping: 0,
 	};
 	let stop = false;
@@ -379,7 +407,7 @@ function walk(root, { all = false } = {}) {
 			}
 			if (isDir) {
 				if (SKIP_DIRS.has(name)) continue;
-				if (!all && NON_SHIPPING_DIRS.has(name) && !(name === "docs" && isDocsSite(abs))) {
+				if (!all && isNonShippingDir(name, relDir, abs)) {
 					stats.non_shipping_skipped.push(rel);
 					continue;
 				}
@@ -420,6 +448,9 @@ function walk(root, { all = false } = {}) {
 	}
 
 	visit("");
+	stats.non_shipping_skipped.sort(cmp);
+	stats.non_shipping_skipped_more = Math.max(0, stats.non_shipping_skipped.length - NON_SHIPPING_LIST_MAX);
+	stats.non_shipping_skipped = stats.non_shipping_skipped.slice(0, NON_SHIPPING_LIST_MAX);
 	stats.files_scanned = files.length;
 	stats.font_files_found = fontFiles.length;
 	return { files, fontFiles, stats };
@@ -1502,9 +1533,12 @@ export function formatText(r) {
 		lines.push(`Stopped at the ${r.stats.file_limit}-file limit: files after that were not scanned.`);
 	if (r.stats.files_skipped_too_large)
 		lines.push(`Skipped ${r.stats.files_skipped_too_large} files over ${r.stats.max_file_bytes} bytes.`);
-	if (r.stats.non_shipping_skipped.length || r.stats.files_skipped_non_shipping)
+	const skippedDirs = r.stats.non_shipping_skipped ?? [];
+	const skippedMore = r.stats.non_shipping_skipped_more ?? 0;
+	const skippedFiles = r.stats.files_skipped_non_shipping ?? 0;
+	if (skippedDirs.length || skippedFiles)
 		lines.push(
-			`Not scanned (tests, fixtures, docs, caches; --all includes them): ${r.stats.non_shipping_skipped.join(", ") || "-"}; ${r.stats.files_skipped_non_shipping} test/spec/story files.`,
+			`Not scanned (tests, fixtures, docs, caches; --all includes them): ${skippedDirs.join(", ") || "no folders"}${skippedMore ? ` (+${skippedMore} more)` : ""}; ${skippedFiles} test/spec/story files.`,
 		);
 	lines.push("");
 	lines.push("Families:");

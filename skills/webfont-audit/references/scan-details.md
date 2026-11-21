@@ -10,13 +10,22 @@ it opens no connection, runs no other program and never parses a font file (font
   `.eot` files without opening them.
 - **Skips:** `node_modules`, `.git`, `dist`, `build`, `.next`, `out`, anything named `.env*`, files over 1 MB (listed
   in `stats.skipped_too_large`), symlinks that leave the root, and symlinked directories (not followed).
-- **Not shipped, skipped by default:** folders named `test`, `tests`, `__tests__`, `__mocks__`, `fixtures`,
-  `__fixtures__`, `e2e`, `cypress`, `playwright-report`, `test-results`, `coverage`, `examples`, `docs`, `.storybook`,
-  `storybook-static` and the tool caches `.wrangler`, `.astro`, `.svelte-kit`, `.nuxt`, `.output`, `.vercel`,
-  `.netlify`, `.turbo`, `.cache` (listed in `stats.non_shipping_skipped`), and `*.test.*`, `*.spec.*`, `*.stories.*`
-  files (counted in `stats.files_skipped_non_shipping`). Their font URLs and `@font-face` rules are test data or
-  mock-ups. A `docs/` folder with its own `package.json` or `.vitepress` is a docs site and is scanned. `--all` scans
-  everything.
+- **Not shipped, skipped by default** (folder names compared case-insensitively; listed in
+  `stats.non_shipping_skipped`, at most 20, the rest counted in `stats.non_shipping_skipped_more`):
+  - at any depth: `__tests__`, `__mocks__`, `fixtures`, `__fixtures__`, `cypress`, `playwright-report`,
+    `test-results`, `coverage`, `.storybook`, `storybook-static` and the caches `.wrangler`, `.astro`, `.svelte-kit`,
+    `.nuxt`, `.output`, `.vercel`, `.netlify`, `.turbo`, `.cache`;
+  - only at the scan root or a workspace root (`apps/<name>`, `packages/<name>`): `test`, `tests`, `e2e`, `examples`,
+    `docs`. Deeper down these are usually routes or components (`app/docs`, `src/routes/docs`) and are scanned. A
+    `docs/` that a site generator publishes is scanned too: it holds `package.json`, `.vitepress`, `_config.yml`,
+    `index.html`, `index.md`, `conf.py`, `mint.json`, `docs.json` or `docusaurus.config.*`, or `mkdocs.yml` sits next
+    to it;
+  - files named `*.test.*`, `*.spec.*`, `*.stories.*`, `*.story.*` or `*.cy.*` (counted in
+    `stats.files_skipped_non_shipping`).
+
+  Their font URLs and `@font-face` rules are test data or mock-ups. Font files inside skipped folders are not listed
+  either. `--all` scans these folders and files; the skips above this list (`node_modules`, build output, `.env*`,
+  files over 1 MB, symlinks) still apply.
 - **Limit:** it reads at most 5,000 files, in sorted path order. At the 5,001st it stops and sets
   `stats.file_limit_reached: true`; the report must say the scan was partial.
 - **Detects:** `@font-face` blocks; `font-family`, `font-weight`, `font-style`, `font-variation-settings` and the
