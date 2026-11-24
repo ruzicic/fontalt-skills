@@ -1,10 +1,62 @@
 # fontalt-skills
 
+Two agent skills for web fonts, by FontAlternatives.
+
+| Skill | What it does | What it needs |
+|---|---|---|
+| [`webfont-audit`](skills/webfont-audit/SKILL.md) | Audits the web fonts a repo declares and uses, from its source files: font-display, unused weights, render-blocking Google Fonts CSS, weights, italics and axes a font does not have, licence flags. | Node.js 18+ |
+| [`optimize-web-fonts`](skills/optimize-web-fonts/SKILL.md) | Shrinks a site's web font bytes (subset, split, trim) and proves nothing changed with pixel diffs. | Python 3.10+ and Playwright |
+
+## Install
+
+```bash
+npx skills add ruzicic/fontalt-skills --skill webfont-audit
+npx skills add ruzicic/fontalt-skills --skill optimize-web-fonts
+```
+
+See both skills with `npx skills add ruzicic/fontalt-skills --list`.
+
+Optional, for the `webfont-audit` catalogue and licence checks:
+
+```bash
+claude mcp add --transport http fontalternatives https://mcp.fontalt.com/mcp
+```
+
+Other agents and manual install: [`docs/install.md`](docs/install.md).
+
+## webfont-audit
+
+Ask your agent to "audit this project's web fonts". The skill runs a zero-dependency Node script over your source
+files (CSS, SCSS, Less, HTML, JS/TS, Vue, Svelte, Astro, Tailwind config, `package.json`) and lists every font,
+weight and loading method. From the files alone it reports a missing or `auto` font-display, `font-display: block` on
+a text font, weights you load but never use, render-blocking Google Fonts CSS, `next/font` subset mismatches and fonts
+split across more than one origin. With the optional MCP server connected it adds the catalogue checks: weights,
+italics or axes a font does not have, the licence on record with its official text, and fonts that are not in our
+data.
+
+The scan runs on your machine and makes no network request. If you connect the MCP server, your agent sends it font
+family names and nothing else: no files, paths, URLs or repo name. No account or key.
+
+**Why this rule.** Google's guidance looks split: its LCP skill says to use `font-display: swap`, while its fallback
+guide never mentions `font-display` and fixes layout shift with font metrics. They answer two different questions.
+`font-display` decides when text becomes visible; fallback metrics decide how far it moves when the web font arrives.
+Webfont Audit asks for both: show text straight away (`swap` by default, always written in the CSS) and stop the
+movement with a metric-matched fallback. `optional` is fine when you would rather keep the fallback than swap late.
+`block` is for icon fonts.
+
+Workflow and rules: [`skills/webfont-audit/SKILL.md`](skills/webfont-audit/SKILL.md). Tests (Node built-ins only):
+
+```bash
+node --test tests/webfont-audit/*.test.mjs
+```
+
+## optimize-web-fonts
+
 An agent skill, `skills/optimize-web-fonts`, that shrinks a site's web font bytes (measure, scan real usage with
 Playwright, subset / split with fontTools, pixel-diff) without changing how anything looks. See
 `skills/optimize-web-fonts/SKILL.md` for the workflow and `docs/install.md` for installation.
 
-## Results
+### Results
 
 Each fixture was run end to end from scratch three times (`tests/run_fixture.py <fixture> --runs 3`).
 Pass = 0 differing pixels (up to 0.02 % of a screenshot tolerated and explained), CLS <= 0.1 and not worse than
@@ -25,7 +77,7 @@ Notes:
 - Linux Chromium 143 only (Playwright 1.57.0); hinting removal is not checked on other platforms.
 - `--axes trim` is not part of the pass criteria (it changes pixels on text-heavy pages); it stays off by default.
 
-## Reproduce
+### Reproduce
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate

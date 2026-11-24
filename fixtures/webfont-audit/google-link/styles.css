@@ -1,0 +1,31 @@
+/* @import of Google Fonts CSS without display: both findings */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400");
+
+body {
+  font-family: Inter, sans-serif;
+  font-variation-settings: "slnt" -8;
+}
+
+.title {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-weight: 700;
+}
+
+.tagline {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: italic;
+}
+
+.quote {
+  font-family: Lora, Georgia, serif;
+  font-style: italic;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

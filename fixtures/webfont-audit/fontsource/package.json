@@ -1,0 +1,9 @@
+{
+  "name": "fontsource-fixture",
+  "private": true,
+  "dependencies": {
+    "@fontsource-variable/roboto-flex": "5.1.0",
+    "@fontsource/inter": "5.1.0",
+    "@fontsource/merriweather": "5.1.0"
+  }
+}

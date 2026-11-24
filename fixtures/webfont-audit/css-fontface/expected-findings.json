@@ -1,0 +1,39 @@
+{
+  "findings": [
+    {
+      "id": "missing-font-display",
+      "family": "Source Serif",
+      "file": "styles/fonts.css",
+      "line": 2,
+      "detail": "No font-display on this @font-face for \"Source Serif\": the browser default (auto) can hide the text for up to about 3 seconds while the font downloads. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: add \"font-display: swap;\" to this rule."
+    },
+    {
+      "id": "missing-font-display",
+      "family": "Source Serif",
+      "file": "styles/fonts.css",
+      "line": 9,
+      "detail": "font-display: auto on this @font-face for \"Source Serif\" is the same as leaving it out: the browser decides, and it can hide the text for up to about 3 seconds while the font downloads. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: change it to \"font-display: swap;\"."
+    },
+    {
+      "id": "font-display-block",
+      "family": "Brand Display",
+      "file": "styles/fonts.css",
+      "line": 17,
+      "detail": "font-display: block on this @font-face for \"Brand Display\" can hide the text for up to about 3 seconds while the font downloads. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: hidden text delays first paint and LCP; fix the shift from a late swap with a metric-matched fallback, not by hiding text. Fix: change it to \"font-display: swap;\". Keep block only if \"Brand Display\" is an icon font."
+    },
+    {
+      "id": "missing-font-display",
+      "family": "Docs Symbols",
+      "file": "styles/fonts.css",
+      "line": 32,
+      "detail": "This @font-face for \"Docs Symbols\", which looks like an icon font, has no font-display, so the browser decides how the icons load. Rule: set font-display on every web font: swap by default, fallback or optional by choice, block only for icon fonts. Reason: an icon font's fallback is not readable text, so swap would put ligature names or empty boxes on screen until the icons load; block hides them briefly instead. Fix: add \"font-display: block;\" to this rule."
+    },
+    {
+      "id": "unused-face-weight",
+      "family": "Code Mono",
+      "file": "styles/fonts.css",
+      "line": 62,
+      "detail": "\"Code Mono\" declares weight 600 here (@font-face), but nothing in the scanned files sets font-weight 600 where this family could apply. Fix: remove this weight, unless something the scan cannot see applies it (styles set by scripts, CMS content)."
+    }
+  ]
+}

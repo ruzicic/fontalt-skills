@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "id": "licence-flags",
+      "family": "Satoshi",
+      "file": "css/fonts.css",
+      "line": 2,
+      "detail": "\"Satoshi\": the licence on record for Satoshi is ITF Free Font License. The repo holds 3 font files for this family (fonts/Satoshi-Variable.woff, fonts/Satoshi-Variable.woff2, fonts/satoshi-latin-subset-400.woff2). The stored flags say no modifying, subsetting or converting the font files and no redistributing them. If these are not the foundry's official files as distributed, read the official licence before you ship them. Official licence: https://www.fontshare.com/licenses/itf-ffl"
+    },
+    {
+      "id": "weight-not-available",
+      "family": "Satoshi",
+      "file": "css/fonts.css",
+      "line": 2,
+      "detail": "\"Satoshi\" is declared or used at weight 200, but our data for Satoshi lists weights 300, 400, 500, 700, 900 and a wght axis from 300 to 900. At weight 200 the browser will substitute the nearest weight or synthesize it."
+    },
+    {
+      "id": "licence-flags",
+      "family": "Cabinet Grotesk",
+      "file": "css/fonts.css",
+      "line": 19,
+      "detail": "\"Cabinet Grotesk\": the licence on record for Cabinet Grotesk is ITF Free Font License. The repo holds 1 font file for this family (fonts/CabinetGrotesk-Bold.woff2). The stored flags say no modifying, subsetting or converting the font files and no redistributing them. If these are not the foundry's official files as distributed, read the official licence before you ship them. Official licence: https://www.fontshare.com/licenses/itf-ffl"
+    }
+  ]
+}

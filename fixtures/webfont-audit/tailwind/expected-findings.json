@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "id": "render-blocking-google-css",
+      "family": null,
+      "file": "src/input.css",
+      "line": 2,
+      "detail": "This @import of Google Fonts CSS (Inter, JetBrains Mono) blocks rendering: the browser finds it only after the stylesheet that imports it has downloaded, then waits for another origin. Fix: replace it with a <link rel=\"stylesheet\"> in the HTML head after a preconnect to https://fonts.googleapis.com and https://fonts.gstatic.com, or self-host the fonts."
+    },
+    {
+      "id": "unused-face-weight",
+      "family": "JetBrains Mono",
+      "file": "src/input.css",
+      "line": 2,
+      "detail": "\"JetBrains Mono\" declares weight 800 here (Google Fonts URL), but nothing in the scanned files sets font-weight 800 where this family could apply. Fix: remove this weight, unless something the scan cannot see applies it (styles set by scripts, CMS content)."
+    },
+    {
+      "id": "mixed-cdn",
+      "family": null,
+      "file": "src/input.css",
+      "line": 3,
+      "detail": "Web fonts load from 2 origins: fonts.googleapis.com (first at src/input.css:2), api.fontshare.com (first at src/input.css:3). Each extra origin needs its own connection before its fonts can download, and fonts split across hosts are harder to preload, cache and audit. Fix: serve all web fonts from one origin, ideally your own."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+body {
+  font-family: "Body Sans", system-ui, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Source Serif", "Source Serif Fallback", Georgia, serif;
+  font-weight: 700;
+}
+
+.hero {
+  font-family: "Brand Display", sans-serif;
+  font-weight: 800;
+}
+
+code {
+  font-family: "Code Mono", ui-monospace, monospace;
+}
+
+.icon {
+  font-family: "Acme Icons";
+}
+
+.docs-icon {
+  font-family: "Docs Symbols";
+}
